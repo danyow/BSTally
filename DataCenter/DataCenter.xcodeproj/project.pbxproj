@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F70666AA1D59A4D500DAB146 /* AssetsHolder+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666581D59A4D500DAB146 /* AssetsHolder+CoreDataProperties.m */; };
+		F70666AB1D59A4D500DAB146 /* AssetsHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = F706665A1D59A4D500DAB146 /* AssetsHolder.m */; };
+		F70666AC1D59A4D500DAB146 /* BorrowDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F706665D1D59A4D500DAB146 /* BorrowDetail+CoreDataProperties.m */; };
+		F70666AD1D59A4D500DAB146 /* BorrowDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F706665F1D59A4D500DAB146 /* BorrowDetail.m */; };
+		F70666AE1D59A4D500DAB146 /* BorrowExpendDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666611D59A4D500DAB146 /* BorrowExpendDetail+CoreDataProperties.m */; };
+		F70666AF1D59A4D500DAB146 /* BorrowExpendDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666631D59A4D500DAB146 /* BorrowExpendDetail.m */; };
+		F70666B01D59A4D500DAB146 /* Detail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666651D59A4D500DAB146 /* Detail+CoreDataProperties.m */; };
+		F70666B11D59A4D500DAB146 /* Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666671D59A4D500DAB146 /* Detail.m */; };
+		F70666B21D59A4D500DAB146 /* ExpendDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666691D59A4D500DAB146 /* ExpendDetail+CoreDataProperties.m */; };
+		F70666B31D59A4D500DAB146 /* ExpendDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F706666B1D59A4D500DAB146 /* ExpendDetail.m */; };
+		F70666B41D59A4D500DAB146 /* IncomeDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F706666D1D59A4D500DAB146 /* IncomeDetail+CoreDataProperties.m */; };
+		F70666B51D59A4D500DAB146 /* IncomeDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F706666F1D59A4D500DAB146 /* IncomeDetail.m */; };
+		F70666B61D59A4D500DAB146 /* LendDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666711D59A4D500DAB146 /* LendDetail+CoreDataProperties.m */; };
+		F70666B71D59A4D500DAB146 /* LendDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666731D59A4D500DAB146 /* LendDetail.m */; };
+		F70666B81D59A4D500DAB146 /* PayBorrowDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666751D59A4D500DAB146 /* PayBorrowDetail+CoreDataProperties.m */; };
+		F70666B91D59A4D500DAB146 /* PayBorrowDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666771D59A4D500DAB146 /* PayBorrowDetail.m */; };
+		F70666BA1D59A4D500DAB146 /* PayLendDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666791D59A4D500DAB146 /* PayLendDetail+CoreDataProperties.m */; };
+		F70666BB1D59A4D500DAB146 /* PayLendDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F706667B1D59A4D500DAB146 /* PayLendDetail.m */; };
+		F70666BC1D59A4D500DAB146 /* CreditCardsAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F706667E1D59A4D500DAB146 /* CreditCardsAssets+CoreDataProperties.m */; };
+		F70666BD1D59A4D500DAB146 /* CreditCardsAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666801D59A4D500DAB146 /* CreditCardsAssets.m */; };
+		F70666BE1D59A4D500DAB146 /* GoldBarAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666821D59A4D500DAB146 /* GoldBarAssets+CoreDataProperties.m */; };
+		F70666BF1D59A4D500DAB146 /* GoldBarAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666841D59A4D500DAB146 /* GoldBarAssets.m */; };
+		F70666C01D59A4D500DAB146 /* HuaBeiAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666861D59A4D500DAB146 /* HuaBeiAssets+CoreDataProperties.m */; };
+		F70666C11D59A4D500DAB146 /* HuaBeiAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666881D59A4D500DAB146 /* HuaBeiAssets.m */; };
+		F70666C21D59A4D500DAB146 /* IntangibleAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F706668A1D59A4D500DAB146 /* IntangibleAssets+CoreDataProperties.m */; };
+		F70666C31D59A4D500DAB146 /* IntangibleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F706668C1D59A4D500DAB146 /* IntangibleAssets.m */; };
+		F70666C41D59A4D500DAB146 /* IOUAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F706668E1D59A4D500DAB146 /* IOUAssets+CoreDataProperties.m */; };
+		F70666C51D59A4D500DAB146 /* IOUAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666901D59A4D500DAB146 /* IOUAssets.m */; };
+		F70666C61D59A4D500DAB146 /* JieBeiAsset+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666921D59A4D500DAB146 /* JieBeiAsset+CoreDataProperties.m */; };
+		F70666C71D59A4D500DAB146 /* JieBeiAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666941D59A4D500DAB146 /* JieBeiAsset.m */; };
+		F70666C81D59A4D500DAB146 /* CashAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666971D59A4D500DAB146 /* CashAssets+CoreDataProperties.m */; };
+		F70666C91D59A4D500DAB146 /* CashAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666991D59A4D500DAB146 /* CashAssets.m */; };
+		F70666CA1D59A4D500DAB146 /* ChangeAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F706669B1D59A4D500DAB146 /* ChangeAssets+CoreDataProperties.m */; };
+		F70666CB1D59A4D500DAB146 /* ChangeAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F706669D1D59A4D500DAB146 /* ChangeAssets.m */; };
+		F70666CC1D59A4D500DAB146 /* DebitCardAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F706669F1D59A4D500DAB146 /* DebitCardAssets+CoreDataProperties.m */; };
+		F70666CD1D59A4D500DAB146 /* DebitCardAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666A11D59A4D500DAB146 /* DebitCardAssets.m */; };
+		F70666CE1D59A4D500DAB146 /* TangibleAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666A31D59A4D500DAB146 /* TangibleAssets+CoreDataProperties.m */; };
+		F70666CF1D59A4D500DAB146 /* TangibleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666A51D59A4D500DAB146 /* TangibleAssets.m */; };
+		F70666D01D59A4D500DAB146 /* YueBaoAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666A71D59A4D500DAB146 /* YueBaoAssets+CoreDataProperties.m */; };
+		F70666D11D59A4D500DAB146 /* YueBaoAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666A91D59A4D500DAB146 /* YueBaoAssets.m */; };
+		F7FD8AE21D367B440013D1B0 /* DataCenter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7FD8AE11D367B440013D1B0 /* DataCenter.h */; };
+		F7FD8AE41D367B440013D1B0 /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FD8AE31D367B440013D1B0 /* DataCenter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F7FD8ADC1D367B440013D1B0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				F7FD8AE21D367B440013D1B0 /* DataCenter.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F70666571D59A4D500DAB146 /* AssetsHolder+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AssetsHolder+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F70666581D59A4D500DAB146 /* AssetsHolder+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AssetsHolder+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F70666591D59A4D500DAB146 /* AssetsHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsHolder.h; sourceTree = "<group>"; };
+		F706665A1D59A4D500DAB146 /* AssetsHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetsHolder.m; sourceTree = "<group>"; };
+		F706665C1D59A4D500DAB146 /* BorrowDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BorrowDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F706665D1D59A4D500DAB146 /* BorrowDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BorrowDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F706665E1D59A4D500DAB146 /* BorrowDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowDetail.h; sourceTree = "<group>"; };
+		F706665F1D59A4D500DAB146 /* BorrowDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowDetail.m; sourceTree = "<group>"; };
+		F70666601D59A4D500DAB146 /* BorrowExpendDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BorrowExpendDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F70666611D59A4D500DAB146 /* BorrowExpendDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BorrowExpendDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F70666621D59A4D500DAB146 /* BorrowExpendDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowExpendDetail.h; sourceTree = "<group>"; };
+		F70666631D59A4D500DAB146 /* BorrowExpendDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowExpendDetail.m; sourceTree = "<group>"; };
+		F70666641D59A4D500DAB146 /* Detail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Detail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F70666651D59A4D500DAB146 /* Detail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Detail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F70666661D59A4D500DAB146 /* Detail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail.h; sourceTree = "<group>"; };
+		F70666671D59A4D500DAB146 /* Detail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail.m; sourceTree = "<group>"; };
+		F70666681D59A4D500DAB146 /* ExpendDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ExpendDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F70666691D59A4D500DAB146 /* ExpendDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ExpendDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F706666A1D59A4D500DAB146 /* ExpendDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpendDetail.h; sourceTree = "<group>"; };
+		F706666B1D59A4D500DAB146 /* ExpendDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpendDetail.m; sourceTree = "<group>"; };
+		F706666C1D59A4D500DAB146 /* IncomeDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IncomeDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F706666D1D59A4D500DAB146 /* IncomeDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IncomeDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F706666E1D59A4D500DAB146 /* IncomeDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomeDetail.h; sourceTree = "<group>"; };
+		F706666F1D59A4D500DAB146 /* IncomeDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomeDetail.m; sourceTree = "<group>"; };
+		F70666701D59A4D500DAB146 /* LendDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LendDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F70666711D59A4D500DAB146 /* LendDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LendDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F70666721D59A4D500DAB146 /* LendDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LendDetail.h; sourceTree = "<group>"; };
+		F70666731D59A4D500DAB146 /* LendDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LendDetail.m; sourceTree = "<group>"; };
+		F70666741D59A4D500DAB146 /* PayBorrowDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PayBorrowDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F70666751D59A4D500DAB146 /* PayBorrowDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PayBorrowDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F70666761D59A4D500DAB146 /* PayBorrowDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayBorrowDetail.h; sourceTree = "<group>"; };
+		F70666771D59A4D500DAB146 /* PayBorrowDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayBorrowDetail.m; sourceTree = "<group>"; };
+		F70666781D59A4D500DAB146 /* PayLendDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PayLendDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F70666791D59A4D500DAB146 /* PayLendDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PayLendDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F706667A1D59A4D500DAB146 /* PayLendDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayLendDetail.h; sourceTree = "<group>"; };
+		F706667B1D59A4D500DAB146 /* PayLendDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayLendDetail.m; sourceTree = "<group>"; };
+		F706667D1D59A4D500DAB146 /* CreditCardsAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CreditCardsAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F706667E1D59A4D500DAB146 /* CreditCardsAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CreditCardsAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F706667F1D59A4D500DAB146 /* CreditCardsAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardsAssets.h; sourceTree = "<group>"; };
+		F70666801D59A4D500DAB146 /* CreditCardsAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardsAssets.m; sourceTree = "<group>"; };
+		F70666811D59A4D500DAB146 /* GoldBarAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GoldBarAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F70666821D59A4D500DAB146 /* GoldBarAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GoldBarAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F70666831D59A4D500DAB146 /* GoldBarAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldBarAssets.h; sourceTree = "<group>"; };
+		F70666841D59A4D500DAB146 /* GoldBarAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoldBarAssets.m; sourceTree = "<group>"; };
+		F70666851D59A4D500DAB146 /* HuaBeiAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HuaBeiAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F70666861D59A4D500DAB146 /* HuaBeiAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HuaBeiAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F70666871D59A4D500DAB146 /* HuaBeiAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HuaBeiAssets.h; sourceTree = "<group>"; };
+		F70666881D59A4D500DAB146 /* HuaBeiAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HuaBeiAssets.m; sourceTree = "<group>"; };
+		F70666891D59A4D500DAB146 /* IntangibleAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IntangibleAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F706668A1D59A4D500DAB146 /* IntangibleAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IntangibleAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F706668B1D59A4D500DAB146 /* IntangibleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntangibleAssets.h; sourceTree = "<group>"; };
+		F706668C1D59A4D500DAB146 /* IntangibleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntangibleAssets.m; sourceTree = "<group>"; };
+		F706668D1D59A4D500DAB146 /* IOUAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IOUAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F706668E1D59A4D500DAB146 /* IOUAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IOUAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F706668F1D59A4D500DAB146 /* IOUAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOUAssets.h; sourceTree = "<group>"; };
+		F70666901D59A4D500DAB146 /* IOUAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOUAssets.m; sourceTree = "<group>"; };
+		F70666911D59A4D500DAB146 /* JieBeiAsset+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JieBeiAsset+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F70666921D59A4D500DAB146 /* JieBeiAsset+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JieBeiAsset+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F70666931D59A4D500DAB146 /* JieBeiAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JieBeiAsset.h; sourceTree = "<group>"; };
+		F70666941D59A4D500DAB146 /* JieBeiAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JieBeiAsset.m; sourceTree = "<group>"; };
+		F70666961D59A4D500DAB146 /* CashAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CashAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F70666971D59A4D500DAB146 /* CashAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CashAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F70666981D59A4D500DAB146 /* CashAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CashAssets.h; sourceTree = "<group>"; };
+		F70666991D59A4D500DAB146 /* CashAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CashAssets.m; sourceTree = "<group>"; };
+		F706669A1D59A4D500DAB146 /* ChangeAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ChangeAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F706669B1D59A4D500DAB146 /* ChangeAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ChangeAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F706669C1D59A4D500DAB146 /* ChangeAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeAssets.h; sourceTree = "<group>"; };
+		F706669D1D59A4D500DAB146 /* ChangeAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeAssets.m; sourceTree = "<group>"; };
+		F706669E1D59A4D500DAB146 /* DebitCardAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DebitCardAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F706669F1D59A4D500DAB146 /* DebitCardAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DebitCardAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F70666A01D59A4D500DAB146 /* DebitCardAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebitCardAssets.h; sourceTree = "<group>"; };
+		F70666A11D59A4D500DAB146 /* DebitCardAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebitCardAssets.m; sourceTree = "<group>"; };
+		F70666A21D59A4D500DAB146 /* TangibleAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TangibleAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F70666A31D59A4D500DAB146 /* TangibleAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TangibleAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F70666A41D59A4D500DAB146 /* TangibleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangibleAssets.h; sourceTree = "<group>"; };
+		F70666A51D59A4D500DAB146 /* TangibleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangibleAssets.m; sourceTree = "<group>"; };
+		F70666A61D59A4D500DAB146 /* YueBaoAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YueBaoAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F70666A71D59A4D500DAB146 /* YueBaoAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YueBaoAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F70666A81D59A4D500DAB146 /* YueBaoAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YueBaoAssets.h; sourceTree = "<group>"; };
+		F70666A91D59A4D500DAB146 /* YueBaoAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YueBaoAssets.m; sourceTree = "<group>"; };
+		F7FD8ADE1D367B440013D1B0 /* libDataCenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDataCenter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7FD8AE11D367B440013D1B0 /* DataCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
+		F7FD8AE31D367B440013D1B0 /* DataCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7FD8ADB1D367B440013D1B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F70666561D59A4D500DAB146 /* BSTally */ = {
+			isa = PBXGroup;
+			children = (
+				F70666571D59A4D500DAB146 /* AssetsHolder+CoreDataProperties.h */,
+				F70666581D59A4D500DAB146 /* AssetsHolder+CoreDataProperties.m */,
+				F70666591D59A4D500DAB146 /* AssetsHolder.h */,
+				F706665A1D59A4D500DAB146 /* AssetsHolder.m */,
+				F706665B1D59A4D500DAB146 /* Detail */,
+				F706667C1D59A4D500DAB146 /* IntangibleAssets */,
+				F70666951D59A4D500DAB146 /* TangibleAssets */,
+			);
+			path = BSTally;
+			sourceTree = "<group>";
+		};
+		F706665B1D59A4D500DAB146 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F706665C1D59A4D500DAB146 /* BorrowDetail+CoreDataProperties.h */,
+				F706665D1D59A4D500DAB146 /* BorrowDetail+CoreDataProperties.m */,
+				F706665E1D59A4D500DAB146 /* BorrowDetail.h */,
+				F706665F1D59A4D500DAB146 /* BorrowDetail.m */,
+				F70666601D59A4D500DAB146 /* BorrowExpendDetail+CoreDataProperties.h */,
+				F70666611D59A4D500DAB146 /* BorrowExpendDetail+CoreDataProperties.m */,
+				F70666621D59A4D500DAB146 /* BorrowExpendDetail.h */,
+				F70666631D59A4D500DAB146 /* BorrowExpendDetail.m */,
+				F70666641D59A4D500DAB146 /* Detail+CoreDataProperties.h */,
+				F70666651D59A4D500DAB146 /* Detail+CoreDataProperties.m */,
+				F70666661D59A4D500DAB146 /* Detail.h */,
+				F70666671D59A4D500DAB146 /* Detail.m */,
+				F70666681D59A4D500DAB146 /* ExpendDetail+CoreDataProperties.h */,
+				F70666691D59A4D500DAB146 /* ExpendDetail+CoreDataProperties.m */,
+				F706666A1D59A4D500DAB146 /* ExpendDetail.h */,
+				F706666B1D59A4D500DAB146 /* ExpendDetail.m */,
+				F706666C1D59A4D500DAB146 /* IncomeDetail+CoreDataProperties.h */,
+				F706666D1D59A4D500DAB146 /* IncomeDetail+CoreDataProperties.m */,
+				F706666E1D59A4D500DAB146 /* IncomeDetail.h */,
+				F706666F1D59A4D500DAB146 /* IncomeDetail.m */,
+				F70666701D59A4D500DAB146 /* LendDetail+CoreDataProperties.h */,
+				F70666711D59A4D500DAB146 /* LendDetail+CoreDataProperties.m */,
+				F70666721D59A4D500DAB146 /* LendDetail.h */,
+				F70666731D59A4D500DAB146 /* LendDetail.m */,
+				F70666741D59A4D500DAB146 /* PayBorrowDetail+CoreDataProperties.h */,
+				F70666751D59A4D500DAB146 /* PayBorrowDetail+CoreDataProperties.m */,
+				F70666761D59A4D500DAB146 /* PayBorrowDetail.h */,
+				F70666771D59A4D500DAB146 /* PayBorrowDetail.m */,
+				F70666781D59A4D500DAB146 /* PayLendDetail+CoreDataProperties.h */,
+				F70666791D59A4D500DAB146 /* PayLendDetail+CoreDataProperties.m */,
+				F706667A1D59A4D500DAB146 /* PayLendDetail.h */,
+				F706667B1D59A4D500DAB146 /* PayLendDetail.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		F706667C1D59A4D500DAB146 /* IntangibleAssets */ = {
+			isa = PBXGroup;
+			children = (
+				F706667D1D59A4D500DAB146 /* CreditCardsAssets+CoreDataProperties.h */,
+				F706667E1D59A4D500DAB146 /* CreditCardsAssets+CoreDataProperties.m */,
+				F706667F1D59A4D500DAB146 /* CreditCardsAssets.h */,
+				F70666801D59A4D500DAB146 /* CreditCardsAssets.m */,
+				F70666811D59A4D500DAB146 /* GoldBarAssets+CoreDataProperties.h */,
+				F70666821D59A4D500DAB146 /* GoldBarAssets+CoreDataProperties.m */,
+				F70666831D59A4D500DAB146 /* GoldBarAssets.h */,
+				F70666841D59A4D500DAB146 /* GoldBarAssets.m */,
+				F70666851D59A4D500DAB146 /* HuaBeiAssets+CoreDataProperties.h */,
+				F70666861D59A4D500DAB146 /* HuaBeiAssets+CoreDataProperties.m */,
+				F70666871D59A4D500DAB146 /* HuaBeiAssets.h */,
+				F70666881D59A4D500DAB146 /* HuaBeiAssets.m */,
+				F70666891D59A4D500DAB146 /* IntangibleAssets+CoreDataProperties.h */,
+				F706668A1D59A4D500DAB146 /* IntangibleAssets+CoreDataProperties.m */,
+				F706668B1D59A4D500DAB146 /* IntangibleAssets.h */,
+				F706668C1D59A4D500DAB146 /* IntangibleAssets.m */,
+				F706668D1D59A4D500DAB146 /* IOUAssets+CoreDataProperties.h */,
+				F706668E1D59A4D500DAB146 /* IOUAssets+CoreDataProperties.m */,
+				F706668F1D59A4D500DAB146 /* IOUAssets.h */,
+				F70666901D59A4D500DAB146 /* IOUAssets.m */,
+				F70666911D59A4D500DAB146 /* JieBeiAsset+CoreDataProperties.h */,
+				F70666921D59A4D500DAB146 /* JieBeiAsset+CoreDataProperties.m */,
+				F70666931D59A4D500DAB146 /* JieBeiAsset.h */,
+				F70666941D59A4D500DAB146 /* JieBeiAsset.m */,
+			);
+			path = IntangibleAssets;
+			sourceTree = "<group>";
+		};
+		F70666951D59A4D500DAB146 /* TangibleAssets */ = {
+			isa = PBXGroup;
+			children = (
+				F70666961D59A4D500DAB146 /* CashAssets+CoreDataProperties.h */,
+				F70666971D59A4D500DAB146 /* CashAssets+CoreDataProperties.m */,
+				F70666981D59A4D500DAB146 /* CashAssets.h */,
+				F70666991D59A4D500DAB146 /* CashAssets.m */,
+				F706669A1D59A4D500DAB146 /* ChangeAssets+CoreDataProperties.h */,
+				F706669B1D59A4D500DAB146 /* ChangeAssets+CoreDataProperties.m */,
+				F706669C1D59A4D500DAB146 /* ChangeAssets.h */,
+				F706669D1D59A4D500DAB146 /* ChangeAssets.m */,
+				F706669E1D59A4D500DAB146 /* DebitCardAssets+CoreDataProperties.h */,
+				F706669F1D59A4D500DAB146 /* DebitCardAssets+CoreDataProperties.m */,
+				F70666A01D59A4D500DAB146 /* DebitCardAssets.h */,
+				F70666A11D59A4D500DAB146 /* DebitCardAssets.m */,
+				F70666A21D59A4D500DAB146 /* TangibleAssets+CoreDataProperties.h */,
+				F70666A31D59A4D500DAB146 /* TangibleAssets+CoreDataProperties.m */,
+				F70666A41D59A4D500DAB146 /* TangibleAssets.h */,
+				F70666A51D59A4D500DAB146 /* TangibleAssets.m */,
+				F70666A61D59A4D500DAB146 /* YueBaoAssets+CoreDataProperties.h */,
+				F70666A71D59A4D500DAB146 /* YueBaoAssets+CoreDataProperties.m */,
+				F70666A81D59A4D500DAB146 /* YueBaoAssets.h */,
+				F70666A91D59A4D500DAB146 /* YueBaoAssets.m */,
+			);
+			path = TangibleAssets;
+			sourceTree = "<group>";
+		};
+		F7FD8AD51D367B440013D1B0 = {
+			isa = PBXGroup;
+			children = (
+				F7FD8AE01D367B440013D1B0 /* DataCenter */,
+				F7FD8ADF1D367B440013D1B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7FD8ADF1D367B440013D1B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7FD8ADE1D367B440013D1B0 /* libDataCenter.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7FD8AE01D367B440013D1B0 /* DataCenter */ = {
+			isa = PBXGroup;
+			children = (
+				F70666561D59A4D500DAB146 /* BSTally */,
+				F7FD8AE11D367B440013D1B0 /* DataCenter.h */,
+				F7FD8AE31D367B440013D1B0 /* DataCenter.m */,
+			);
+			path = DataCenter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7FD8ADD1D367B440013D1B0 /* DataCenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7FD8AE71D367B440013D1B0 /* Build configuration list for PBXNativeTarget "DataCenter" */;
+			buildPhases = (
+				F7FD8ADA1D367B440013D1B0 /* Sources */,
+				F7FD8ADB1D367B440013D1B0 /* Frameworks */,
+				F7FD8ADC1D367B440013D1B0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataCenter;
+			productName = DataCenter;
+			productReference = F7FD8ADE1D367B440013D1B0 /* libDataCenter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7FD8AD61D367B440013D1B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Danyow.Ed;
+				TargetAttributes = {
+					F7FD8ADD1D367B440013D1B0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F7FD8AD91D367B440013D1B0 /* Build configuration list for PBXProject "DataCenter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F7FD8AD51D367B440013D1B0;
+			productRefGroup = F7FD8ADF1D367B440013D1B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7FD8ADD1D367B440013D1B0 /* DataCenter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7FD8ADA1D367B440013D1B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70666C01D59A4D500DAB146 /* HuaBeiAssets+CoreDataProperties.m in Sources */,
+				F70666BA1D59A4D500DAB146 /* PayLendDetail+CoreDataProperties.m in Sources */,
+				F70666BB1D59A4D500DAB146 /* PayLendDetail.m in Sources */,
+				F70666AA1D59A4D500DAB146 /* AssetsHolder+CoreDataProperties.m in Sources */,
+				F70666AE1D59A4D500DAB146 /* BorrowExpendDetail+CoreDataProperties.m in Sources */,
+				F70666C21D59A4D500DAB146 /* IntangibleAssets+CoreDataProperties.m in Sources */,
+				F70666BD1D59A4D500DAB146 /* CreditCardsAssets.m in Sources */,
+				F70666CB1D59A4D500DAB146 /* ChangeAssets.m in Sources */,
+				F70666C81D59A4D500DAB146 /* CashAssets+CoreDataProperties.m in Sources */,
+				F70666C71D59A4D500DAB146 /* JieBeiAsset.m in Sources */,
+				F70666B81D59A4D500DAB146 /* PayBorrowDetail+CoreDataProperties.m in Sources */,
+				F70666B11D59A4D500DAB146 /* Detail.m in Sources */,
+				F7FD8AE41D367B440013D1B0 /* DataCenter.m in Sources */,
+				F70666D01D59A4D500DAB146 /* YueBaoAssets+CoreDataProperties.m in Sources */,
+				F70666CD1D59A4D500DAB146 /* DebitCardAssets.m in Sources */,
+				F70666BC1D59A4D500DAB146 /* CreditCardsAssets+CoreDataProperties.m in Sources */,
+				F70666B71D59A4D500DAB146 /* LendDetail.m in Sources */,
+				F70666CC1D59A4D500DAB146 /* DebitCardAssets+CoreDataProperties.m in Sources */,
+				F70666C61D59A4D500DAB146 /* JieBeiAsset+CoreDataProperties.m in Sources */,
+				F70666CE1D59A4D500DAB146 /* TangibleAssets+CoreDataProperties.m in Sources */,
+				F70666C41D59A4D500DAB146 /* IOUAssets+CoreDataProperties.m in Sources */,
+				F70666AB1D59A4D500DAB146 /* AssetsHolder.m in Sources */,
+				F70666B01D59A4D500DAB146 /* Detail+CoreDataProperties.m in Sources */,
+				F70666CA1D59A4D500DAB146 /* ChangeAssets+CoreDataProperties.m in Sources */,
+				F70666BF1D59A4D500DAB146 /* GoldBarAssets.m in Sources */,
+				F70666CF1D59A4D500DAB146 /* TangibleAssets.m in Sources */,
+				F70666B31D59A4D500DAB146 /* ExpendDetail.m in Sources */,
+				F70666B61D59A4D500DAB146 /* LendDetail+CoreDataProperties.m in Sources */,
+				F70666B91D59A4D500DAB146 /* PayBorrowDetail.m in Sources */,
+				F70666B21D59A4D500DAB146 /* ExpendDetail+CoreDataProperties.m in Sources */,
+				F70666C11D59A4D500DAB146 /* HuaBeiAssets.m in Sources */,
+				F70666C91D59A4D500DAB146 /* CashAssets.m in Sources */,
+				F70666B51D59A4D500DAB146 /* IncomeDetail.m in Sources */,
+				F70666AC1D59A4D500DAB146 /* BorrowDetail+CoreDataProperties.m in Sources */,
+				F70666AD1D59A4D500DAB146 /* BorrowDetail.m in Sources */,
+				F70666C51D59A4D500DAB146 /* IOUAssets.m in Sources */,
+				F70666AF1D59A4D500DAB146 /* BorrowExpendDetail.m in Sources */,
+				F70666BE1D59A4D500DAB146 /* GoldBarAssets+CoreDataProperties.m in Sources */,
+				F70666D11D59A4D500DAB146 /* YueBaoAssets.m in Sources */,
+				F70666C31D59A4D500DAB146 /* IntangibleAssets.m in Sources */,
+				F70666B41D59A4D500DAB146 /* IncomeDetail+CoreDataProperties.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F7FD8AE51D367B440013D1B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F7FD8AE61D367B440013D1B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7FD8AE81D367B440013D1B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../**";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F7FD8AE91D367B440013D1B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../**";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7FD8AD91D367B440013D1B0 /* Build configuration list for PBXProject "DataCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7FD8AE51D367B440013D1B0 /* Debug */,
+				F7FD8AE61D367B440013D1B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7FD8AE71D367B440013D1B0 /* Build configuration list for PBXNativeTarget "DataCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7FD8AE81D367B440013D1B0 /* Debug */,
+				F7FD8AE91D367B440013D1B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7FD8AD61D367B440013D1B0 /* Project object */;
+}

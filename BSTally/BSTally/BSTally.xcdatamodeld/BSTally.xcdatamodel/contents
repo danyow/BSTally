@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Xcode 7.0">
+    <entity name="AssetsHolder" representedClassName="AssetsHolder" syncable="YES">
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="intangibleAssets" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="IntangibleAssets" inverseName="whoHolder" inverseEntity="IntangibleAssets" syncable="YES"/>
+        <relationship name="tangibleAssets" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TangibleAssets" inverseName="whoHolder" inverseEntity="TangibleAssets" syncable="YES"/>
+    </entity>
+    <entity name="BorrowDetail" representedClassName="BorrowDetail" parentEntity="Detail" syncable="YES">
+        <relationship name="payBorrowDetails" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PayBorrowDetail" inverseName="whichBorrowDetail" inverseEntity="PayBorrowDetail" syncable="YES"/>
+    </entity>
+    <entity name="BorrowExpendDetail" representedClassName="BorrowExpendDetail" parentEntity="Detail" syncable="YES">
+        <relationship name="payBorrowDetails" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PayBorrowDetail" inverseName="whichBorrowExpendDetail" inverseEntity="PayBorrowDetail" syncable="YES"/>
+    </entity>
+    <entity name="CashAssets" representedClassName="CashAssets" parentEntity="TangibleAssets" syncable="YES"/>
+    <entity name="ChangeAssets" representedClassName="ChangeAssets" parentEntity="TangibleAssets" syncable="YES"/>
+    <entity name="CreditCardsAssets" representedClassName="CreditCardsAssets" parentEntity="IntangibleAssets" syncable="YES"/>
+    <entity name="DebitCardAssets" representedClassName="DebitCardAssets" parentEntity="TangibleAssets" syncable="YES"/>
+    <entity name="Detail" representedClassName="Detail" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remarks" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tags" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="whichIntangibleAssets" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IntangibleAssets" inverseName="dailys" inverseEntity="IntangibleAssets" syncable="YES"/>
+        <relationship name="whichTangibleAssets" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TangibleAssets" inverseName="dailys" inverseEntity="TangibleAssets" syncable="YES"/>
+    </entity>
+    <entity name="ExpendDetail" representedClassName="ExpendDetail" parentEntity="Detail" syncable="YES"/>
+    <entity name="GoldBarAssets" representedClassName="GoldBarAssets" parentEntity="IntangibleAssets" syncable="YES"/>
+    <entity name="HuaBeiAssets" representedClassName="HuaBeiAssets" parentEntity="IntangibleAssets" syncable="YES"/>
+    <entity name="IncomeDetail" representedClassName="IncomeDetail" parentEntity="Detail" syncable="YES"/>
+    <entity name="IntangibleAssets" representedClassName="IntangibleAssets" syncable="YES">
+        <attribute name="balance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="borrowBalance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="createDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quota" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="dailys" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Detail" inverseName="whichIntangibleAssets" inverseEntity="Detail" syncable="YES"/>
+        <relationship name="whoHolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AssetsHolder" inverseName="intangibleAssets" inverseEntity="AssetsHolder" syncable="YES"/>
+    </entity>
+    <entity name="IOUAssets" representedClassName="IOUAssets" parentEntity="IntangibleAssets" syncable="YES"/>
+    <entity name="JieBeiAsset" representedClassName="JieBeiAsset" parentEntity="IntangibleAssets" syncable="YES"/>
+    <entity name="LendDetail" representedClassName="LendDetail" parentEntity="Detail" syncable="YES">
+        <relationship name="paylendDetails" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PayLendDetail" inverseName="whichLendDatail" inverseEntity="PayLendDetail" syncable="YES"/>
+    </entity>
+    <entity name="PayBorrowDetail" representedClassName="PayBorrowDetail" parentEntity="Detail" syncable="YES">
+        <relationship name="whichBorrowDetail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BorrowDetail" inverseName="payBorrowDetails" inverseEntity="BorrowDetail" syncable="YES"/>
+        <relationship name="whichBorrowExpendDetail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BorrowExpendDetail" inverseName="payBorrowDetails" inverseEntity="BorrowExpendDetail" syncable="YES"/>
+    </entity>
+    <entity name="PayLendDetail" representedClassName="PayLendDetail" parentEntity="Detail" syncable="YES">
+        <relationship name="whichLendDatail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LendDetail" inverseName="paylendDetails" inverseEntity="LendDetail" syncable="YES"/>
+    </entity>
+    <entity name="TangibleAssets" representedClassName="TangibleAssets" syncable="YES">
+        <attribute name="balance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="borrowBalance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="createDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lendBalance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="dailys" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Detail" inverseName="whichTangibleAssets" inverseEntity="Detail" syncable="YES"/>
+        <relationship name="whoHolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AssetsHolder" inverseName="tangibleAssets" inverseEntity="AssetsHolder" syncable="YES"/>
+    </entity>
+    <entity name="YueBaoAssets" representedClassName="YueBaoAssets" parentEntity="TangibleAssets" syncable="YES"/>
+    <elements>
+        <element name="JieBeiAsset" positionX="-63" positionY="-18" width="128" height="45"/>
+        <element name="AssetsHolder" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="HuaBeiAssets" positionX="-36" positionY="9" width="128" height="45"/>
+        <element name="DebitCardAssets" positionX="-18" positionY="27" width="128" height="45"/>
+        <element name="PayBorrowDetail" positionX="0" positionY="45" width="128" height="75"/>
+        <element name="GoldBarAssets" positionX="18" positionY="63" width="128" height="45"/>
+        <element name="LendDetail" positionX="36" positionY="81" width="128" height="60"/>
+        <element name="BorrowExpendDetail" positionX="-9" positionY="36" width="128" height="60"/>
+        <element name="PayLendDetail" positionX="0" positionY="45" width="128" height="60"/>
+        <element name="BorrowDetail" positionX="9" positionY="54" width="128" height="60"/>
+        <element name="IntangibleAssets" positionX="18" positionY="63" width="128" height="150"/>
+        <element name="Detail" positionX="27" positionY="72" width="128" height="135"/>
+        <element name="IOUAssets" positionX="36" positionY="81" width="128" height="45"/>
+        <element name="TangibleAssets" positionX="45" positionY="90" width="128" height="150"/>
+        <element name="CashAssets" positionX="-9" positionY="36" width="128" height="45"/>
+        <element name="IncomeDetail" positionX="0" positionY="45" width="128" height="45"/>
+        <element name="YueBaoAssets" positionX="9" positionY="54" width="128" height="45"/>
+        <element name="ChangeAssets" positionX="18" positionY="63" width="128" height="45"/>
+        <element name="ExpendDetail" positionX="27" positionY="72" width="128" height="45"/>
+        <element name="CreditCardsAssets" positionX="36" positionY="81" width="128" height="45"/>
+    </elements>
+</model>

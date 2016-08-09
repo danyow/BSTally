@@ -1,0 +1,17 @@
+//
+//  BSTally.pch
+//  BSTally
+//
+//  Created by junhong.zhu@lachesis-mh.com on 16/8/8.
+//  Copyright © 2016年 Danyow.Ed. All rights reserved.
+//
+
+#ifndef BSTally_pch
+#define BSTally_pch
+
+#import "CommonDefine.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* BSTally_pch */

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:BSTally/BSTally.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ControlCenter/ControlCenter.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DataCenter/DataCenter.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ToolCenter/ToolCenter.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TemplateCenter/TemplateCenter.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
