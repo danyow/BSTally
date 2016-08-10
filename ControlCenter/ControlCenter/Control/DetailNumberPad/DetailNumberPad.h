@@ -10,4 +10,8 @@
 
 @interface DetailNumberPad : UIView
 
+@property (nonatomic, strong) UITextField *needInputField;
+
+- (void)setInputField:(UITextField *)textField completeCallback:(void(^)(NSInteger number))completeCallback;
+
 @end

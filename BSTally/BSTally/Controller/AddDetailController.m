@@ -14,7 +14,6 @@
 
 @interface AddDetailController ()<UITextFieldDelegate, UISegmentViewDelegate>
 
-@property (nonatomic, copy  ) NSString    *beforeAmount;
 @property (nonatomic, strong) UITextField *amountField;
 @property (nonatomic, strong) UITextField *dateField;
 
@@ -52,6 +51,7 @@
 {
     [super viewDidLoad];
     [self viewWillAddSubview];
+    [self.amountField becomeFirstResponder];
 }
 
 - (void)viewWillAddSubview {
@@ -78,12 +78,11 @@
         make.height.equalTo(@30);
     }];
     
-    [self.view addSubview:self.numberPad];
-    [self.numberPad mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.bottom.trailing.mas_equalTo(UIEdgeInsetsZero);
-        make.height.equalTo(@(kView_Height(self.view) * 0.5));
-    }];
-    
+//    [self.view addSubview:self.numberPad];
+//    [self.numberPad mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.leading.bottom.trailing.mas_equalTo(UIEdgeInsetsZero);
+//        make.height.equalTo(@(kView_Height(self.view) * 0.5));
+//    }];
 }
 
 #pragma mark -
@@ -186,9 +185,12 @@
         _amountField = [[UITextField alloc] init];
         [_amountField addTarget:self action:@selector(amountFieldTextChange:) forControlEvents:UIControlEventEditingChanged];
         _amountField.borderStyle = UITextBorderStyleRoundedRect;
-        _amountField.keyboardType = UIKeyboardTypeDecimalPad;
+        //_amountField.keyboardType = UIKeyboardTypeDecimalPad;
         _amountField.backgroundColor = kColor_White;
         _amountField.placeholder = @"请输入金额";
+        [self.numberPad setInputField:_amountField completeCallback:^(NSInteger number) {
+            
+        }];
     }
     return _amountField;
 }
@@ -232,7 +234,7 @@
 - (DetailNumberPad *)numberPad
 {
     if (!_numberPad) {
-        _numberPad = [[DetailNumberPad alloc] init];
+        _numberPad = [[DetailNumberPad alloc] initWithFrame:CGRectMake(0, 0, kView_Width(self.view), kView_Height(self.view) * 0.5)];
         _numberPad.backgroundColor = kColor_White;
         _numberPad.layer.borderColor = kColor_Black.CGColor;
         _numberPad.layer.borderWidth = 0.5;

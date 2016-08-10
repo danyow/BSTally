@@ -22,8 +22,9 @@ static NSString * const kTableViewCellReuseIdentifier = @"askfjhkal";
 @property (nonatomic, strong) PureColorButton *addDetailButton;
 @property (nonatomic, strong) AssetsAccountant *accountant;
 
-@property (nonatomic, strong) NSArray *assetsNameArray;
+@property (nonatomic, strong) NSArray     *assetsNameArray;
 @property (nonatomic, strong) UITableView *tableView;
+
 @end
 
 @implementation HomeViewController
