@@ -8,6 +8,7 @@
 
 #import "ViewDefine.h"
 #import "ColorDefine.h"
+#import "FontDefine.h"
 #ifndef ControlDefine_h
 #define ControlDefine_h
 

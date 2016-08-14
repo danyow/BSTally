@@ -2,7 +2,7 @@
 //  Detail+CoreDataProperties.h
 //  DataCenter
 //
-//  Created by Danyow on 16/8/7.
+//  Created by Danyow on 16/8/14.
 //  Copyright © 2016年 Danyow.Ed. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -19,8 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSString *date;
 @property (nullable, nonatomic, retain) NSString *remarks;
 @property (nullable, nonatomic, retain) id tags;
-@property (nullable, nonatomic, retain) IntangibleAssets *whichIntangibleAssets;
-@property (nullable, nonatomic, retain) TangibleAssets *whichTangibleAssets;
+@property (nullable, nonatomic, retain) Assets *whichAsset;
 
 @end
 

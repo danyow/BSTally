@@ -27,9 +27,7 @@
 {
     self.window = [[UIWindow alloc] init];
     TabBarController *tabBarController = [[TabBarController alloc] init];
-    for (UIViewController *child in self.childControllers) {
-        [tabBarController addChildViewController:child];
-    }
+    [tabBarController setViewControllers:self.childControllers];
     self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
@@ -75,7 +73,7 @@
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"BSTally" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"BSTally" withExtension:@"mom"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }

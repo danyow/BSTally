@@ -2,7 +2,7 @@
 //  AssetsHolder+CoreDataProperties.h
 //  DataCenter
 //
-//  Created by Danyow on 16/8/7.
+//  Created by Danyow on 16/8/14.
 //  Copyright © 2016年 Danyow.Ed. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -16,22 +16,16 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AssetsHolder (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSString *userName;
-@property (nullable, nonatomic, retain) NSMutableSet<TangibleAssets *> *tangibleAssets;
-@property (nullable, nonatomic, retain) NSMutableSet<IntangibleAssets *> *intangibleAssets;
+@property (nullable, nonatomic, retain) NSMutableSet<NSManagedObject *> *assets;
 
 @end
 
 @interface AssetsHolder (CoreDataGeneratedAccessors)
 
-- (void)addTangibleAssetsObject:(TangibleAssets *)value;
-- (void)removeTangibleAssetsObject:(TangibleAssets *)value;
-- (void)addTangibleAssets:(NSMutableSet<TangibleAssets *> *)values;
-- (void)removeTangibleAssets:(NSMutableSet<TangibleAssets *> *)values;
-
-- (void)addIntangibleAssetsObject:(IntangibleAssets *)value;
-- (void)removeIntangibleAssetsObject:(IntangibleAssets *)value;
-- (void)addIntangibleAssets:(NSMutableSet<IntangibleAssets *> *)values;
-- (void)removeIntangibleAssets:(NSMutableSet<IntangibleAssets *> *)values;
+- (void)addAssetsObject:(NSManagedObject *)value;
+- (void)removeAssetsObject:(NSManagedObject *)value;
+- (void)addAssets:(NSMutableSet<NSManagedObject *> *)values;
+- (void)removeAssets:(NSMutableSet<NSManagedObject *> *)values;
 
 @end
 

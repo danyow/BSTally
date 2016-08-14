@@ -6,9 +6,9 @@
 //  Copyright © 2016年 Danyow.Ed. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BasicViewController.h"
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : BasicViewController
 
 
 

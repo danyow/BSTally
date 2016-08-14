@@ -16,6 +16,7 @@
 #import "ToolCenter.h"
 #import "TangibleAssets+CalculationBalance.h"
 #import "IntangibleAssets+CalculationBalance.h"
+#import "Assets+CalculationBalance.h"
 
 @interface AssetsAccountant ()<NSFetchedResultsControllerDelegate>
 
@@ -75,7 +76,7 @@ static AssetsAccountant *accountant_;
     }
 }
 
-- (AssetsType)queryAssetsName:(NSString *)assetsName
+- (AssetsType)queryAssetsTypeWithAssetsName:(NSString *)assetsName;
 {
     __block AssetsType type;
     [self.allAssets enumerateObjectsUsingBlock:^(id  _Nonnull obj, BOOL * _Nonnull stop) {
@@ -104,6 +105,17 @@ static AssetsAccountant *accountant_;
         }
     }];
     return type;
+}
+
+- (id)queryAssetsObjectWithAssetsName:(NSString *)assetsName
+{
+    __block id assetsObj;
+    [self.allAssets enumerateObjectsUsingBlock:^(id  _Nonnull obj, BOOL * _Nonnull stop) {
+        if ([[obj name] isEqualToString:assetsName]) {
+            assetsObj = obj;
+        }
+    }];
+    return assetsObj;
 }
 
 - (void)creatNewAssetsName:(NSString *)name assetsType:(AssetsType)assetsType
@@ -150,10 +162,10 @@ static AssetsAccountant *accountant_;
     [assets setValue:self.holder forKey:@"whoHolder"];
     [assets setValue:[ToolCenter currentDateStringWithDateFormat:@"yyyy-MM-dd"] forKey:@"createDate"];
     if (assetsType < AssetsTypeIOU) {
-        [self.holder.tangibleAssets addObject:assets];
+        [self.holder.assets addObject:assets];
         NSLog(@"创建Assets时：holder添加了一个%@，tangibleAssets", name);
     } else {
-        [self.holder.intangibleAssets addObject:assets];
+        [self.holder.assets addObject:assets];
         NSLog(@"创建Assets时：holder添加了一个%@，intangibleAssets", name);
     }
     [self save];
@@ -262,11 +274,7 @@ static AssetsAccountant *accountant_;
             detail.remarks = remarks;
             detail.tags = tags;
             detail.date = date ? [date stringByAppendingString:@" 12:00:00"] : [ToolCenter currentDateStringWithDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-            if ([obj isKindOfClass:[TangibleAssets class]]) {
-                detail.whichTangibleAssets = obj;
-            } else {
-                detail.whichIntangibleAssets = obj;
-            }
+            detail.whichAsset = obj;
             [[obj dailys] addObject:detail];
             [obj calculationBalanceWithSingleDetail:detail isAdd:YES];
             [self save];
@@ -286,16 +294,9 @@ static AssetsAccountant *accountant_;
     __block NSInteger count = 0;
     [self.allAssets enumerateObjectsUsingBlock:^(id  _Nonnull obj, BOOL * _Nonnull stop) {
         if ([[obj name] isEqualToString:assetsName]) {
-            if (detail.whichTangibleAssets) {
-                [detail.whichTangibleAssets calculationBalanceWithSingleDetail:detail isAdd:NO];
-            } else if (detail.whichIntangibleAssets) {
-                [detail.whichIntangibleAssets calculationBalanceWithSingleDetail:detail isAdd:NO];
-            }
-            if ([obj isKindOfClass:[TangibleAssets class]]) {
-                detail.whichTangibleAssets = obj;
-            } else {
-                detail.whichIntangibleAssets = obj;
-            }
+
+            [detail.whichAsset calculationBalanceWithSingleDetail:detail isAdd:NO];
+            detail.whichAsset = obj;
             [[obj dailys] addObject:detail];
             [obj calculationBalanceWithSingleDetail:detail isAdd:YES];
             [self save];
@@ -311,14 +312,9 @@ static AssetsAccountant *accountant_;
 
 - (void)deleteDetail:(Detail *)detail
 {
-    if (detail.whichIntangibleAssets || detail.whichTangibleAssets) {
-        if (detail.whichTangibleAssets) {
-            [detail.whichTangibleAssets calculationBalanceWithSingleDetail:detail isAdd:NO];
-            [detail.whichTangibleAssets removeDailysObject:detail];
-        } else if (detail.whichIntangibleAssets) {
-            [detail.whichIntangibleAssets calculationBalanceWithSingleDetail:detail isAdd:NO];
-            [detail.whichIntangibleAssets removeDailysObject:detail];
-        }
+    if (detail.whichAsset) {
+        [detail.whichAsset calculationBalanceWithSingleDetail:detail isAdd:NO];
+        [detail.whichAsset removeDailysObject:detail];
         [self.context deleteObject:detail];
         [self save];
     } else {
@@ -353,11 +349,7 @@ static AssetsAccountant *accountant_;
 
 - (NSMutableSet *)allAssets
 {
-    NSMutableSet *allAssets = [NSMutableSet setWithSet:self.holder.tangibleAssets];
-    if (!allAssets) {
-        allAssets = [NSMutableSet set];
-    }
-    allAssets = [[allAssets setByAddingObjectsFromSet:self.holder.intangibleAssets] mutableCopy];
+    NSMutableSet *allAssets = [NSMutableSet setWithSet:self.holder.assets];
     return allAssets;
 }
 

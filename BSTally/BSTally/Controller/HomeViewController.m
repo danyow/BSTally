@@ -12,6 +12,9 @@
 #import "PureColorButton.h"
 #import "ControlDefine.h"
 #import "Masonry.h"
+#import "AddAssetsController.h"
+#import "AssetController.h"
+
 
 static NSString * const kTableViewCellReuseIdentifier = @"askfjhkal";
 
@@ -32,7 +35,6 @@ static NSString * const kTableViewCellReuseIdentifier = @"askfjhkal";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self preparatoryWork];
     [self hideTabBar];
     [self loadAssets];
 }
@@ -45,25 +47,18 @@ static NSString * const kTableViewCellReuseIdentifier = @"askfjhkal";
     self.tabBarController.tabBar.hidden = YES;
 }
 
-- (void)preparatoryWork
+- (void)viewWillAddSubview
 {
+    [super viewWillAddSubview];
     self.view.backgroundColor = kColor_White;
-    
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(@0);
+        make.edges.mas_equalTo(UIEdgeInsetsMake(kNavBarHeight, 0, 0, 0));
     }];
-    
-//    [self.view addSubview:self.bottomBarContainer];
-//    [self.bottomBarContainer mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.leading.bottom.trailing.equalTo(self.view);
-//        make.height.equalTo(@44);
-//    }];
-//    [self.bottomBarContainer addSubview:self.addDetailButton];
-//    [self.addDetailButton mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.equalTo(self.bottomBarContainer);
-//    }];
 }
+
+
+
 
 - (void)loadAssets
 {
@@ -118,19 +113,18 @@ static NSString * const kTableViewCellReuseIdentifier = @"askfjhkal";
 #pragma mark UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    AddDetailController *addDetailController = [AddDetailController addDetailControllerWithAssetsName:self.assetsNameArray[indexPath.row]];
-    [self presentViewController:addDetailController animated:YES completion:nil];
+    AssetController *assetController = [AssetController assetControllerWithAssetName:self.assetsNameArray[indexPath.row]];
+    [self.navigationController pushViewController:assetController animated:YES];
 }
 
 #pragma mark -
 #pragma mark event handle
 
-- (void)addDetailButtonPressed:(UIButton *)sender
+- (void)rightButtonPressed:(UIButton *)sender
 {
-    [self.accountant creatNewAssetsName:@"1" assetsType:AssetsTypeIOU];
-    AddDetailController *addDetailController = [AddDetailController addDetailControllerWithAssetsName:@"1"];
-    [self presentViewController:addDetailController animated:YES completion:nil];
+    [self.navigationController pushViewController:[[AddAssetsController alloc] init] animated:YES];
 }
+
 
 #pragma mark -
 #pragma mark lazy load
@@ -152,7 +146,7 @@ static NSString * const kTableViewCellReuseIdentifier = @"askfjhkal";
         _addDetailButton.selectedColor  = randomColor;
         _addDetailButton.highlightColor = randomColor;
         [_addDetailButton setTitle:@"记账" forState:UIControlStateNormal];
-        [_addDetailButton addTarget:self action:@selector(addDetailButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+//        [_addDetailButton addTarget:self action:@selector(addDetailButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _addDetailButton;
 }
@@ -175,4 +169,5 @@ static NSString * const kTableViewCellReuseIdentifier = @"askfjhkal";
     }
     return _accountant;
 }
+
 @end

@@ -15,8 +15,8 @@
 #define kColor_Clear                [UIColor clearColor]
 #define kColor_Black                [UIColor blackColor]
 #define kColor_Random               [ColorCenter randomColor]
-#define kColor_HexInteger(Interger) [ColorCenter colorWithHexInteger:(Interger)]
-#define kColor_HexString(String)    [ColorCenter colorWithHexString:(String)]
-#define kColor_Alpha(Color, Alpha)  [Color colorWithAlphaComponent:(Alpha)]
+#define kColor_HexInteger(INTERGER) [ColorCenter colorWithHexInteger:(INTERGER)]
+#define kColor_HexString(STRING)    [ColorCenter colorWithHexString:(STRING)]
+#define kColor_Alpha(COLOR, ALPHA)  [COLOR colorWithAlphaComponent:(ALPHA)]
 
 #endif /* ColorDefine_h */

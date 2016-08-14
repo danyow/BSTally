@@ -8,7 +8,7 @@
 
 #import "BasicViewController.h"
 
-@interface AddDetailController : UIViewController
+@interface AddDetailController : BasicViewController
 
 + (instancetype)addDetailControllerWithAssetsName:(NSString *)assetsName;
 

@@ -17,7 +17,10 @@
 #define kView_MaxY(view)             CGRectGetMaxY((view).frame)
 #define kView_MidY(view)             CGRectGetMidY((view).frame)
 #define kView_MinY(view)             CGRectGetMinY((view).frame)
+
+#define kStateBarHeight              20
 #define kBarHeight                   44
+#define kNavBarHeight                (kStateBarHeight + kBarHeight)
 #define kMargin                      8
 
 

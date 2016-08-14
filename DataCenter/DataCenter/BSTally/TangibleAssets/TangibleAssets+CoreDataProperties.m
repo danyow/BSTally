@@ -1,8 +1,8 @@
 //
 //  TangibleAssets+CoreDataProperties.m
-//  forme
+//  DataCenter
 //
-//  Created by Danyow on 16/8/6.
+//  Created by Danyow on 16/8/14.
 //  Copyright © 2016年 Danyow.Ed. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -13,9 +13,6 @@
 
 @implementation TangibleAssets (CoreDataProperties)
 
-@dynamic balance;
-@dynamic borrowBalance;
 @dynamic lendBalance;
-@dynamic dailys;
 
 @end

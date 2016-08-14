@@ -2,7 +2,7 @@
 //  IntangibleAssets+CoreDataProperties.m
 //  DataCenter
 //
-//  Created by Danyow on 16/8/7.
+//  Created by Danyow on 16/8/14.
 //  Copyright © 2016年 Danyow.Ed. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -13,9 +13,6 @@
 
 @implementation IntangibleAssets (CoreDataProperties)
 
-@dynamic balance;
-@dynamic borrowBalance;
 @dynamic quota;
-@dynamic dailys;
 
 @end

@@ -7,46 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F70666AA1D59A4D500DAB146 /* AssetsHolder+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666581D59A4D500DAB146 /* AssetsHolder+CoreDataProperties.m */; };
-		F70666AB1D59A4D500DAB146 /* AssetsHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = F706665A1D59A4D500DAB146 /* AssetsHolder.m */; };
-		F70666AC1D59A4D500DAB146 /* BorrowDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F706665D1D59A4D500DAB146 /* BorrowDetail+CoreDataProperties.m */; };
-		F70666AD1D59A4D500DAB146 /* BorrowDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F706665F1D59A4D500DAB146 /* BorrowDetail.m */; };
-		F70666AE1D59A4D500DAB146 /* BorrowExpendDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666611D59A4D500DAB146 /* BorrowExpendDetail+CoreDataProperties.m */; };
-		F70666AF1D59A4D500DAB146 /* BorrowExpendDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666631D59A4D500DAB146 /* BorrowExpendDetail.m */; };
-		F70666B01D59A4D500DAB146 /* Detail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666651D59A4D500DAB146 /* Detail+CoreDataProperties.m */; };
-		F70666B11D59A4D500DAB146 /* Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666671D59A4D500DAB146 /* Detail.m */; };
-		F70666B21D59A4D500DAB146 /* ExpendDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666691D59A4D500DAB146 /* ExpendDetail+CoreDataProperties.m */; };
-		F70666B31D59A4D500DAB146 /* ExpendDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F706666B1D59A4D500DAB146 /* ExpendDetail.m */; };
-		F70666B41D59A4D500DAB146 /* IncomeDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F706666D1D59A4D500DAB146 /* IncomeDetail+CoreDataProperties.m */; };
-		F70666B51D59A4D500DAB146 /* IncomeDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F706666F1D59A4D500DAB146 /* IncomeDetail.m */; };
-		F70666B61D59A4D500DAB146 /* LendDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666711D59A4D500DAB146 /* LendDetail+CoreDataProperties.m */; };
-		F70666B71D59A4D500DAB146 /* LendDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666731D59A4D500DAB146 /* LendDetail.m */; };
-		F70666B81D59A4D500DAB146 /* PayBorrowDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666751D59A4D500DAB146 /* PayBorrowDetail+CoreDataProperties.m */; };
-		F70666B91D59A4D500DAB146 /* PayBorrowDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666771D59A4D500DAB146 /* PayBorrowDetail.m */; };
-		F70666BA1D59A4D500DAB146 /* PayLendDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666791D59A4D500DAB146 /* PayLendDetail+CoreDataProperties.m */; };
-		F70666BB1D59A4D500DAB146 /* PayLendDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F706667B1D59A4D500DAB146 /* PayLendDetail.m */; };
-		F70666BC1D59A4D500DAB146 /* CreditCardsAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F706667E1D59A4D500DAB146 /* CreditCardsAssets+CoreDataProperties.m */; };
-		F70666BD1D59A4D500DAB146 /* CreditCardsAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666801D59A4D500DAB146 /* CreditCardsAssets.m */; };
-		F70666BE1D59A4D500DAB146 /* GoldBarAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666821D59A4D500DAB146 /* GoldBarAssets+CoreDataProperties.m */; };
-		F70666BF1D59A4D500DAB146 /* GoldBarAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666841D59A4D500DAB146 /* GoldBarAssets.m */; };
-		F70666C01D59A4D500DAB146 /* HuaBeiAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666861D59A4D500DAB146 /* HuaBeiAssets+CoreDataProperties.m */; };
-		F70666C11D59A4D500DAB146 /* HuaBeiAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666881D59A4D500DAB146 /* HuaBeiAssets.m */; };
-		F70666C21D59A4D500DAB146 /* IntangibleAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F706668A1D59A4D500DAB146 /* IntangibleAssets+CoreDataProperties.m */; };
-		F70666C31D59A4D500DAB146 /* IntangibleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F706668C1D59A4D500DAB146 /* IntangibleAssets.m */; };
-		F70666C41D59A4D500DAB146 /* IOUAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F706668E1D59A4D500DAB146 /* IOUAssets+CoreDataProperties.m */; };
-		F70666C51D59A4D500DAB146 /* IOUAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666901D59A4D500DAB146 /* IOUAssets.m */; };
-		F70666C61D59A4D500DAB146 /* JieBeiAsset+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666921D59A4D500DAB146 /* JieBeiAsset+CoreDataProperties.m */; };
-		F70666C71D59A4D500DAB146 /* JieBeiAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666941D59A4D500DAB146 /* JieBeiAsset.m */; };
-		F70666C81D59A4D500DAB146 /* CashAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666971D59A4D500DAB146 /* CashAssets+CoreDataProperties.m */; };
-		F70666C91D59A4D500DAB146 /* CashAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666991D59A4D500DAB146 /* CashAssets.m */; };
-		F70666CA1D59A4D500DAB146 /* ChangeAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F706669B1D59A4D500DAB146 /* ChangeAssets+CoreDataProperties.m */; };
-		F70666CB1D59A4D500DAB146 /* ChangeAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F706669D1D59A4D500DAB146 /* ChangeAssets.m */; };
-		F70666CC1D59A4D500DAB146 /* DebitCardAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F706669F1D59A4D500DAB146 /* DebitCardAssets+CoreDataProperties.m */; };
-		F70666CD1D59A4D500DAB146 /* DebitCardAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666A11D59A4D500DAB146 /* DebitCardAssets.m */; };
-		F70666CE1D59A4D500DAB146 /* TangibleAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666A31D59A4D500DAB146 /* TangibleAssets+CoreDataProperties.m */; };
-		F70666CF1D59A4D500DAB146 /* TangibleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666A51D59A4D500DAB146 /* TangibleAssets.m */; };
-		F70666D01D59A4D500DAB146 /* YueBaoAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666A71D59A4D500DAB146 /* YueBaoAssets+CoreDataProperties.m */; };
-		F70666D11D59A4D500DAB146 /* YueBaoAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F70666A91D59A4D500DAB146 /* YueBaoAssets.m */; };
+		F7964CB91D60C54700940DC8 /* AssetsHolder+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964C661D60C54700940DC8 /* AssetsHolder+CoreDataProperties.m */; };
+		F7964CBA1D60C54700940DC8 /* AssetsHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964C681D60C54700940DC8 /* AssetsHolder.m */; };
+		F7964CDD1D60C54700940DC8 /* Assets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964CAE1D60C54700940DC8 /* Assets+CoreDataProperties.m */; };
+		F7964CDE1D60C54700940DC8 /* Assets.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964CB01D60C54700940DC8 /* Assets.m */; };
+		F7964D321D60C5C500940DC8 /* BorrowDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964CE51D60C5C500940DC8 /* BorrowDetail+CoreDataProperties.m */; };
+		F7964D331D60C5C500940DC8 /* BorrowDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964CE71D60C5C500940DC8 /* BorrowDetail.m */; };
+		F7964D341D60C5C500940DC8 /* BorrowExpendDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964CE91D60C5C500940DC8 /* BorrowExpendDetail+CoreDataProperties.m */; };
+		F7964D351D60C5C500940DC8 /* BorrowExpendDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964CEB1D60C5C500940DC8 /* BorrowExpendDetail.m */; };
+		F7964D361D60C5C500940DC8 /* Detail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964CED1D60C5C500940DC8 /* Detail+CoreDataProperties.m */; };
+		F7964D371D60C5C500940DC8 /* Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964CEF1D60C5C500940DC8 /* Detail.m */; };
+		F7964D381D60C5C500940DC8 /* ExpendDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964CF11D60C5C500940DC8 /* ExpendDetail+CoreDataProperties.m */; };
+		F7964D391D60C5C500940DC8 /* ExpendDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964CF31D60C5C500940DC8 /* ExpendDetail.m */; };
+		F7964D3A1D60C5C500940DC8 /* IncomeDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964CF51D60C5C500940DC8 /* IncomeDetail+CoreDataProperties.m */; };
+		F7964D3B1D60C5C500940DC8 /* IncomeDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964CF71D60C5C500940DC8 /* IncomeDetail.m */; };
+		F7964D3C1D60C5C500940DC8 /* LendDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964CF91D60C5C500940DC8 /* LendDetail+CoreDataProperties.m */; };
+		F7964D3D1D60C5C500940DC8 /* LendDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964CFB1D60C5C500940DC8 /* LendDetail.m */; };
+		F7964D3E1D60C5C500940DC8 /* PayBorrowDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964CFD1D60C5C500940DC8 /* PayBorrowDetail+CoreDataProperties.m */; };
+		F7964D3F1D60C5C500940DC8 /* PayBorrowDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964CFF1D60C5C500940DC8 /* PayBorrowDetail.m */; };
+		F7964D401D60C5C500940DC8 /* PayLendDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D011D60C5C500940DC8 /* PayLendDetail+CoreDataProperties.m */; };
+		F7964D411D60C5C500940DC8 /* PayLendDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D031D60C5C500940DC8 /* PayLendDetail.m */; };
+		F7964D421D60C5C500940DC8 /* CreditCardsAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D061D60C5C500940DC8 /* CreditCardsAssets+CoreDataProperties.m */; };
+		F7964D431D60C5C500940DC8 /* CreditCardsAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D081D60C5C500940DC8 /* CreditCardsAssets.m */; };
+		F7964D441D60C5C500940DC8 /* GoldBarAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D0A1D60C5C500940DC8 /* GoldBarAssets+CoreDataProperties.m */; };
+		F7964D451D60C5C500940DC8 /* GoldBarAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D0C1D60C5C500940DC8 /* GoldBarAssets.m */; };
+		F7964D461D60C5C500940DC8 /* HuaBeiAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D0E1D60C5C500940DC8 /* HuaBeiAssets+CoreDataProperties.m */; };
+		F7964D471D60C5C500940DC8 /* HuaBeiAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D101D60C5C500940DC8 /* HuaBeiAssets.m */; };
+		F7964D481D60C5C500940DC8 /* IntangibleAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D121D60C5C500940DC8 /* IntangibleAssets+CoreDataProperties.m */; };
+		F7964D491D60C5C500940DC8 /* IntangibleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D141D60C5C500940DC8 /* IntangibleAssets.m */; };
+		F7964D4A1D60C5C500940DC8 /* IOUAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D161D60C5C500940DC8 /* IOUAssets+CoreDataProperties.m */; };
+		F7964D4B1D60C5C500940DC8 /* IOUAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D181D60C5C500940DC8 /* IOUAssets.m */; };
+		F7964D4C1D60C5C500940DC8 /* JieBeiAsset+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D1A1D60C5C500940DC8 /* JieBeiAsset+CoreDataProperties.m */; };
+		F7964D4D1D60C5C500940DC8 /* JieBeiAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D1C1D60C5C500940DC8 /* JieBeiAsset.m */; };
+		F7964D4E1D60C5C500940DC8 /* CashAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D1F1D60C5C500940DC8 /* CashAssets+CoreDataProperties.m */; };
+		F7964D4F1D60C5C500940DC8 /* CashAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D211D60C5C500940DC8 /* CashAssets.m */; };
+		F7964D501D60C5C500940DC8 /* ChangeAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D231D60C5C500940DC8 /* ChangeAssets+CoreDataProperties.m */; };
+		F7964D511D60C5C500940DC8 /* ChangeAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D251D60C5C500940DC8 /* ChangeAssets.m */; };
+		F7964D521D60C5C500940DC8 /* DebitCardAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D271D60C5C500940DC8 /* DebitCardAssets+CoreDataProperties.m */; };
+		F7964D531D60C5C500940DC8 /* DebitCardAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D291D60C5C500940DC8 /* DebitCardAssets.m */; };
+		F7964D541D60C5C500940DC8 /* TangibleAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D2B1D60C5C500940DC8 /* TangibleAssets+CoreDataProperties.m */; };
+		F7964D551D60C5C500940DC8 /* TangibleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D2D1D60C5C500940DC8 /* TangibleAssets.m */; };
+		F7964D561D60C5C500940DC8 /* YueBaoAssets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D2F1D60C5C500940DC8 /* YueBaoAssets+CoreDataProperties.m */; };
+		F7964D571D60C5C500940DC8 /* YueBaoAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D311D60C5C500940DC8 /* YueBaoAssets.m */; };
 		F7FD8AE21D367B440013D1B0 /* DataCenter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7FD8AE11D367B440013D1B0 /* DataCenter.h */; };
 		F7FD8AE41D367B440013D1B0 /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FD8AE31D367B440013D1B0 /* DataCenter.m */; };
 /* End PBXBuildFile section */
@@ -65,86 +67,90 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F70666571D59A4D500DAB146 /* AssetsHolder+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AssetsHolder+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F70666581D59A4D500DAB146 /* AssetsHolder+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AssetsHolder+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F70666591D59A4D500DAB146 /* AssetsHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsHolder.h; sourceTree = "<group>"; };
-		F706665A1D59A4D500DAB146 /* AssetsHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetsHolder.m; sourceTree = "<group>"; };
-		F706665C1D59A4D500DAB146 /* BorrowDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BorrowDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F706665D1D59A4D500DAB146 /* BorrowDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BorrowDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F706665E1D59A4D500DAB146 /* BorrowDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowDetail.h; sourceTree = "<group>"; };
-		F706665F1D59A4D500DAB146 /* BorrowDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowDetail.m; sourceTree = "<group>"; };
-		F70666601D59A4D500DAB146 /* BorrowExpendDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BorrowExpendDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F70666611D59A4D500DAB146 /* BorrowExpendDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BorrowExpendDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F70666621D59A4D500DAB146 /* BorrowExpendDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowExpendDetail.h; sourceTree = "<group>"; };
-		F70666631D59A4D500DAB146 /* BorrowExpendDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowExpendDetail.m; sourceTree = "<group>"; };
-		F70666641D59A4D500DAB146 /* Detail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Detail+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F70666651D59A4D500DAB146 /* Detail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Detail+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F70666661D59A4D500DAB146 /* Detail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail.h; sourceTree = "<group>"; };
-		F70666671D59A4D500DAB146 /* Detail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail.m; sourceTree = "<group>"; };
-		F70666681D59A4D500DAB146 /* ExpendDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ExpendDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F70666691D59A4D500DAB146 /* ExpendDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ExpendDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F706666A1D59A4D500DAB146 /* ExpendDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpendDetail.h; sourceTree = "<group>"; };
-		F706666B1D59A4D500DAB146 /* ExpendDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpendDetail.m; sourceTree = "<group>"; };
-		F706666C1D59A4D500DAB146 /* IncomeDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IncomeDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F706666D1D59A4D500DAB146 /* IncomeDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IncomeDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F706666E1D59A4D500DAB146 /* IncomeDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomeDetail.h; sourceTree = "<group>"; };
-		F706666F1D59A4D500DAB146 /* IncomeDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomeDetail.m; sourceTree = "<group>"; };
-		F70666701D59A4D500DAB146 /* LendDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LendDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F70666711D59A4D500DAB146 /* LendDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LendDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F70666721D59A4D500DAB146 /* LendDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LendDetail.h; sourceTree = "<group>"; };
-		F70666731D59A4D500DAB146 /* LendDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LendDetail.m; sourceTree = "<group>"; };
-		F70666741D59A4D500DAB146 /* PayBorrowDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PayBorrowDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F70666751D59A4D500DAB146 /* PayBorrowDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PayBorrowDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F70666761D59A4D500DAB146 /* PayBorrowDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayBorrowDetail.h; sourceTree = "<group>"; };
-		F70666771D59A4D500DAB146 /* PayBorrowDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayBorrowDetail.m; sourceTree = "<group>"; };
-		F70666781D59A4D500DAB146 /* PayLendDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PayLendDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F70666791D59A4D500DAB146 /* PayLendDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PayLendDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F706667A1D59A4D500DAB146 /* PayLendDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayLendDetail.h; sourceTree = "<group>"; };
-		F706667B1D59A4D500DAB146 /* PayLendDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayLendDetail.m; sourceTree = "<group>"; };
-		F706667D1D59A4D500DAB146 /* CreditCardsAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CreditCardsAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F706667E1D59A4D500DAB146 /* CreditCardsAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CreditCardsAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F706667F1D59A4D500DAB146 /* CreditCardsAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardsAssets.h; sourceTree = "<group>"; };
-		F70666801D59A4D500DAB146 /* CreditCardsAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardsAssets.m; sourceTree = "<group>"; };
-		F70666811D59A4D500DAB146 /* GoldBarAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GoldBarAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F70666821D59A4D500DAB146 /* GoldBarAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GoldBarAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F70666831D59A4D500DAB146 /* GoldBarAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldBarAssets.h; sourceTree = "<group>"; };
-		F70666841D59A4D500DAB146 /* GoldBarAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoldBarAssets.m; sourceTree = "<group>"; };
-		F70666851D59A4D500DAB146 /* HuaBeiAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HuaBeiAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F70666861D59A4D500DAB146 /* HuaBeiAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HuaBeiAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F70666871D59A4D500DAB146 /* HuaBeiAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HuaBeiAssets.h; sourceTree = "<group>"; };
-		F70666881D59A4D500DAB146 /* HuaBeiAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HuaBeiAssets.m; sourceTree = "<group>"; };
-		F70666891D59A4D500DAB146 /* IntangibleAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IntangibleAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F706668A1D59A4D500DAB146 /* IntangibleAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IntangibleAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F706668B1D59A4D500DAB146 /* IntangibleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntangibleAssets.h; sourceTree = "<group>"; };
-		F706668C1D59A4D500DAB146 /* IntangibleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntangibleAssets.m; sourceTree = "<group>"; };
-		F706668D1D59A4D500DAB146 /* IOUAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IOUAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F706668E1D59A4D500DAB146 /* IOUAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IOUAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F706668F1D59A4D500DAB146 /* IOUAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOUAssets.h; sourceTree = "<group>"; };
-		F70666901D59A4D500DAB146 /* IOUAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOUAssets.m; sourceTree = "<group>"; };
-		F70666911D59A4D500DAB146 /* JieBeiAsset+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JieBeiAsset+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F70666921D59A4D500DAB146 /* JieBeiAsset+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JieBeiAsset+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F70666931D59A4D500DAB146 /* JieBeiAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JieBeiAsset.h; sourceTree = "<group>"; };
-		F70666941D59A4D500DAB146 /* JieBeiAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JieBeiAsset.m; sourceTree = "<group>"; };
-		F70666961D59A4D500DAB146 /* CashAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CashAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F70666971D59A4D500DAB146 /* CashAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CashAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F70666981D59A4D500DAB146 /* CashAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CashAssets.h; sourceTree = "<group>"; };
-		F70666991D59A4D500DAB146 /* CashAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CashAssets.m; sourceTree = "<group>"; };
-		F706669A1D59A4D500DAB146 /* ChangeAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ChangeAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F706669B1D59A4D500DAB146 /* ChangeAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ChangeAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F706669C1D59A4D500DAB146 /* ChangeAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeAssets.h; sourceTree = "<group>"; };
-		F706669D1D59A4D500DAB146 /* ChangeAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeAssets.m; sourceTree = "<group>"; };
-		F706669E1D59A4D500DAB146 /* DebitCardAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DebitCardAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F706669F1D59A4D500DAB146 /* DebitCardAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DebitCardAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F70666A01D59A4D500DAB146 /* DebitCardAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebitCardAssets.h; sourceTree = "<group>"; };
-		F70666A11D59A4D500DAB146 /* DebitCardAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebitCardAssets.m; sourceTree = "<group>"; };
-		F70666A21D59A4D500DAB146 /* TangibleAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TangibleAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F70666A31D59A4D500DAB146 /* TangibleAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TangibleAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F70666A41D59A4D500DAB146 /* TangibleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangibleAssets.h; sourceTree = "<group>"; };
-		F70666A51D59A4D500DAB146 /* TangibleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangibleAssets.m; sourceTree = "<group>"; };
-		F70666A61D59A4D500DAB146 /* YueBaoAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YueBaoAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F70666A71D59A4D500DAB146 /* YueBaoAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YueBaoAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F70666A81D59A4D500DAB146 /* YueBaoAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YueBaoAssets.h; sourceTree = "<group>"; };
-		F70666A91D59A4D500DAB146 /* YueBaoAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YueBaoAssets.m; sourceTree = "<group>"; };
+		F7964C651D60C54700940DC8 /* AssetsHolder+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AssetsHolder+CoreDataProperties.h"; path = "BSTally/AssetsHolder+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964C661D60C54700940DC8 /* AssetsHolder+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AssetsHolder+CoreDataProperties.m"; path = "BSTally/AssetsHolder+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964C671D60C54700940DC8 /* AssetsHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AssetsHolder.h; path = BSTally/AssetsHolder.h; sourceTree = "<group>"; };
+		F7964C681D60C54700940DC8 /* AssetsHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AssetsHolder.m; path = BSTally/AssetsHolder.m; sourceTree = "<group>"; };
+		F7964CAD1D60C54700940DC8 /* Assets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Assets+CoreDataProperties.h"; path = "BSTally/Assets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964CAE1D60C54700940DC8 /* Assets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Assets+CoreDataProperties.m"; path = "BSTally/Assets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964CAF1D60C54700940DC8 /* Assets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Assets.h; path = BSTally/Assets.h; sourceTree = "<group>"; };
+		F7964CB01D60C54700940DC8 /* Assets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Assets.m; path = BSTally/Assets.m; sourceTree = "<group>"; };
+		F7964CE41D60C5C500940DC8 /* BorrowDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BorrowDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964CE51D60C5C500940DC8 /* BorrowDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BorrowDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964CE61D60C5C500940DC8 /* BorrowDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowDetail.h; sourceTree = "<group>"; };
+		F7964CE71D60C5C500940DC8 /* BorrowDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowDetail.m; sourceTree = "<group>"; };
+		F7964CE81D60C5C500940DC8 /* BorrowExpendDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BorrowExpendDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964CE91D60C5C500940DC8 /* BorrowExpendDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BorrowExpendDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964CEA1D60C5C500940DC8 /* BorrowExpendDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowExpendDetail.h; sourceTree = "<group>"; };
+		F7964CEB1D60C5C500940DC8 /* BorrowExpendDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowExpendDetail.m; sourceTree = "<group>"; };
+		F7964CEC1D60C5C500940DC8 /* Detail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Detail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964CED1D60C5C500940DC8 /* Detail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Detail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964CEE1D60C5C500940DC8 /* Detail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail.h; sourceTree = "<group>"; };
+		F7964CEF1D60C5C500940DC8 /* Detail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail.m; sourceTree = "<group>"; };
+		F7964CF01D60C5C500940DC8 /* ExpendDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ExpendDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964CF11D60C5C500940DC8 /* ExpendDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ExpendDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964CF21D60C5C500940DC8 /* ExpendDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpendDetail.h; sourceTree = "<group>"; };
+		F7964CF31D60C5C500940DC8 /* ExpendDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpendDetail.m; sourceTree = "<group>"; };
+		F7964CF41D60C5C500940DC8 /* IncomeDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IncomeDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964CF51D60C5C500940DC8 /* IncomeDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IncomeDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964CF61D60C5C500940DC8 /* IncomeDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomeDetail.h; sourceTree = "<group>"; };
+		F7964CF71D60C5C500940DC8 /* IncomeDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomeDetail.m; sourceTree = "<group>"; };
+		F7964CF81D60C5C500940DC8 /* LendDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LendDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964CF91D60C5C500940DC8 /* LendDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LendDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964CFA1D60C5C500940DC8 /* LendDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LendDetail.h; sourceTree = "<group>"; };
+		F7964CFB1D60C5C500940DC8 /* LendDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LendDetail.m; sourceTree = "<group>"; };
+		F7964CFC1D60C5C500940DC8 /* PayBorrowDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PayBorrowDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964CFD1D60C5C500940DC8 /* PayBorrowDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PayBorrowDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964CFE1D60C5C500940DC8 /* PayBorrowDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayBorrowDetail.h; sourceTree = "<group>"; };
+		F7964CFF1D60C5C500940DC8 /* PayBorrowDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayBorrowDetail.m; sourceTree = "<group>"; };
+		F7964D001D60C5C500940DC8 /* PayLendDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PayLendDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964D011D60C5C500940DC8 /* PayLendDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PayLendDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964D021D60C5C500940DC8 /* PayLendDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayLendDetail.h; sourceTree = "<group>"; };
+		F7964D031D60C5C500940DC8 /* PayLendDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayLendDetail.m; sourceTree = "<group>"; };
+		F7964D051D60C5C500940DC8 /* CreditCardsAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CreditCardsAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964D061D60C5C500940DC8 /* CreditCardsAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CreditCardsAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964D071D60C5C500940DC8 /* CreditCardsAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardsAssets.h; sourceTree = "<group>"; };
+		F7964D081D60C5C500940DC8 /* CreditCardsAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardsAssets.m; sourceTree = "<group>"; };
+		F7964D091D60C5C500940DC8 /* GoldBarAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GoldBarAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964D0A1D60C5C500940DC8 /* GoldBarAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GoldBarAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964D0B1D60C5C500940DC8 /* GoldBarAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldBarAssets.h; sourceTree = "<group>"; };
+		F7964D0C1D60C5C500940DC8 /* GoldBarAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoldBarAssets.m; sourceTree = "<group>"; };
+		F7964D0D1D60C5C500940DC8 /* HuaBeiAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HuaBeiAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964D0E1D60C5C500940DC8 /* HuaBeiAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HuaBeiAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964D0F1D60C5C500940DC8 /* HuaBeiAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HuaBeiAssets.h; sourceTree = "<group>"; };
+		F7964D101D60C5C500940DC8 /* HuaBeiAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HuaBeiAssets.m; sourceTree = "<group>"; };
+		F7964D111D60C5C500940DC8 /* IntangibleAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IntangibleAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964D121D60C5C500940DC8 /* IntangibleAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IntangibleAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964D131D60C5C500940DC8 /* IntangibleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntangibleAssets.h; sourceTree = "<group>"; };
+		F7964D141D60C5C500940DC8 /* IntangibleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntangibleAssets.m; sourceTree = "<group>"; };
+		F7964D151D60C5C500940DC8 /* IOUAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IOUAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964D161D60C5C500940DC8 /* IOUAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IOUAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964D171D60C5C500940DC8 /* IOUAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOUAssets.h; sourceTree = "<group>"; };
+		F7964D181D60C5C500940DC8 /* IOUAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOUAssets.m; sourceTree = "<group>"; };
+		F7964D191D60C5C500940DC8 /* JieBeiAsset+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JieBeiAsset+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964D1A1D60C5C500940DC8 /* JieBeiAsset+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JieBeiAsset+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964D1B1D60C5C500940DC8 /* JieBeiAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JieBeiAsset.h; sourceTree = "<group>"; };
+		F7964D1C1D60C5C500940DC8 /* JieBeiAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JieBeiAsset.m; sourceTree = "<group>"; };
+		F7964D1E1D60C5C500940DC8 /* CashAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CashAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964D1F1D60C5C500940DC8 /* CashAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CashAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964D201D60C5C500940DC8 /* CashAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CashAssets.h; sourceTree = "<group>"; };
+		F7964D211D60C5C500940DC8 /* CashAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CashAssets.m; sourceTree = "<group>"; };
+		F7964D221D60C5C500940DC8 /* ChangeAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ChangeAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964D231D60C5C500940DC8 /* ChangeAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ChangeAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964D241D60C5C500940DC8 /* ChangeAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeAssets.h; sourceTree = "<group>"; };
+		F7964D251D60C5C500940DC8 /* ChangeAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeAssets.m; sourceTree = "<group>"; };
+		F7964D261D60C5C500940DC8 /* DebitCardAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DebitCardAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964D271D60C5C500940DC8 /* DebitCardAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DebitCardAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964D281D60C5C500940DC8 /* DebitCardAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebitCardAssets.h; sourceTree = "<group>"; };
+		F7964D291D60C5C500940DC8 /* DebitCardAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebitCardAssets.m; sourceTree = "<group>"; };
+		F7964D2A1D60C5C500940DC8 /* TangibleAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TangibleAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964D2B1D60C5C500940DC8 /* TangibleAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TangibleAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964D2C1D60C5C500940DC8 /* TangibleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangibleAssets.h; sourceTree = "<group>"; };
+		F7964D2D1D60C5C500940DC8 /* TangibleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangibleAssets.m; sourceTree = "<group>"; };
+		F7964D2E1D60C5C500940DC8 /* YueBaoAssets+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YueBaoAssets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7964D2F1D60C5C500940DC8 /* YueBaoAssets+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YueBaoAssets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7964D301D60C5C500940DC8 /* YueBaoAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YueBaoAssets.h; sourceTree = "<group>"; };
+		F7964D311D60C5C500940DC8 /* YueBaoAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YueBaoAssets.m; sourceTree = "<group>"; };
 		F7FD8ADE1D367B440013D1B0 /* libDataCenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDataCenter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FD8AE11D367B440013D1B0 /* DataCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
 		F7FD8AE31D367B440013D1B0 /* DataCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
@@ -164,110 +170,106 @@
 		F70666561D59A4D500DAB146 /* BSTally */ = {
 			isa = PBXGroup;
 			children = (
-				F70666571D59A4D500DAB146 /* AssetsHolder+CoreDataProperties.h */,
-				F70666581D59A4D500DAB146 /* AssetsHolder+CoreDataProperties.m */,
-				F70666591D59A4D500DAB146 /* AssetsHolder.h */,
-				F706665A1D59A4D500DAB146 /* AssetsHolder.m */,
-				F706665B1D59A4D500DAB146 /* Detail */,
-				F706667C1D59A4D500DAB146 /* IntangibleAssets */,
-				F70666951D59A4D500DAB146 /* TangibleAssets */,
+				F7964CE31D60C5C500940DC8 /* Detail */,
+				F7964D041D60C5C500940DC8 /* IntangibleAssets */,
+				F7964D1D1D60C5C500940DC8 /* TangibleAssets */,
 			);
 			path = BSTally;
 			sourceTree = "<group>";
 		};
-		F706665B1D59A4D500DAB146 /* Detail */ = {
+		F7964CE31D60C5C500940DC8 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				F706665C1D59A4D500DAB146 /* BorrowDetail+CoreDataProperties.h */,
-				F706665D1D59A4D500DAB146 /* BorrowDetail+CoreDataProperties.m */,
-				F706665E1D59A4D500DAB146 /* BorrowDetail.h */,
-				F706665F1D59A4D500DAB146 /* BorrowDetail.m */,
-				F70666601D59A4D500DAB146 /* BorrowExpendDetail+CoreDataProperties.h */,
-				F70666611D59A4D500DAB146 /* BorrowExpendDetail+CoreDataProperties.m */,
-				F70666621D59A4D500DAB146 /* BorrowExpendDetail.h */,
-				F70666631D59A4D500DAB146 /* BorrowExpendDetail.m */,
-				F70666641D59A4D500DAB146 /* Detail+CoreDataProperties.h */,
-				F70666651D59A4D500DAB146 /* Detail+CoreDataProperties.m */,
-				F70666661D59A4D500DAB146 /* Detail.h */,
-				F70666671D59A4D500DAB146 /* Detail.m */,
-				F70666681D59A4D500DAB146 /* ExpendDetail+CoreDataProperties.h */,
-				F70666691D59A4D500DAB146 /* ExpendDetail+CoreDataProperties.m */,
-				F706666A1D59A4D500DAB146 /* ExpendDetail.h */,
-				F706666B1D59A4D500DAB146 /* ExpendDetail.m */,
-				F706666C1D59A4D500DAB146 /* IncomeDetail+CoreDataProperties.h */,
-				F706666D1D59A4D500DAB146 /* IncomeDetail+CoreDataProperties.m */,
-				F706666E1D59A4D500DAB146 /* IncomeDetail.h */,
-				F706666F1D59A4D500DAB146 /* IncomeDetail.m */,
-				F70666701D59A4D500DAB146 /* LendDetail+CoreDataProperties.h */,
-				F70666711D59A4D500DAB146 /* LendDetail+CoreDataProperties.m */,
-				F70666721D59A4D500DAB146 /* LendDetail.h */,
-				F70666731D59A4D500DAB146 /* LendDetail.m */,
-				F70666741D59A4D500DAB146 /* PayBorrowDetail+CoreDataProperties.h */,
-				F70666751D59A4D500DAB146 /* PayBorrowDetail+CoreDataProperties.m */,
-				F70666761D59A4D500DAB146 /* PayBorrowDetail.h */,
-				F70666771D59A4D500DAB146 /* PayBorrowDetail.m */,
-				F70666781D59A4D500DAB146 /* PayLendDetail+CoreDataProperties.h */,
-				F70666791D59A4D500DAB146 /* PayLendDetail+CoreDataProperties.m */,
-				F706667A1D59A4D500DAB146 /* PayLendDetail.h */,
-				F706667B1D59A4D500DAB146 /* PayLendDetail.m */,
+				F7964CE41D60C5C500940DC8 /* BorrowDetail+CoreDataProperties.h */,
+				F7964CE51D60C5C500940DC8 /* BorrowDetail+CoreDataProperties.m */,
+				F7964CE61D60C5C500940DC8 /* BorrowDetail.h */,
+				F7964CE71D60C5C500940DC8 /* BorrowDetail.m */,
+				F7964CE81D60C5C500940DC8 /* BorrowExpendDetail+CoreDataProperties.h */,
+				F7964CE91D60C5C500940DC8 /* BorrowExpendDetail+CoreDataProperties.m */,
+				F7964CEA1D60C5C500940DC8 /* BorrowExpendDetail.h */,
+				F7964CEB1D60C5C500940DC8 /* BorrowExpendDetail.m */,
+				F7964CEC1D60C5C500940DC8 /* Detail+CoreDataProperties.h */,
+				F7964CED1D60C5C500940DC8 /* Detail+CoreDataProperties.m */,
+				F7964CEE1D60C5C500940DC8 /* Detail.h */,
+				F7964CEF1D60C5C500940DC8 /* Detail.m */,
+				F7964CF01D60C5C500940DC8 /* ExpendDetail+CoreDataProperties.h */,
+				F7964CF11D60C5C500940DC8 /* ExpendDetail+CoreDataProperties.m */,
+				F7964CF21D60C5C500940DC8 /* ExpendDetail.h */,
+				F7964CF31D60C5C500940DC8 /* ExpendDetail.m */,
+				F7964CF41D60C5C500940DC8 /* IncomeDetail+CoreDataProperties.h */,
+				F7964CF51D60C5C500940DC8 /* IncomeDetail+CoreDataProperties.m */,
+				F7964CF61D60C5C500940DC8 /* IncomeDetail.h */,
+				F7964CF71D60C5C500940DC8 /* IncomeDetail.m */,
+				F7964CF81D60C5C500940DC8 /* LendDetail+CoreDataProperties.h */,
+				F7964CF91D60C5C500940DC8 /* LendDetail+CoreDataProperties.m */,
+				F7964CFA1D60C5C500940DC8 /* LendDetail.h */,
+				F7964CFB1D60C5C500940DC8 /* LendDetail.m */,
+				F7964CFC1D60C5C500940DC8 /* PayBorrowDetail+CoreDataProperties.h */,
+				F7964CFD1D60C5C500940DC8 /* PayBorrowDetail+CoreDataProperties.m */,
+				F7964CFE1D60C5C500940DC8 /* PayBorrowDetail.h */,
+				F7964CFF1D60C5C500940DC8 /* PayBorrowDetail.m */,
+				F7964D001D60C5C500940DC8 /* PayLendDetail+CoreDataProperties.h */,
+				F7964D011D60C5C500940DC8 /* PayLendDetail+CoreDataProperties.m */,
+				F7964D021D60C5C500940DC8 /* PayLendDetail.h */,
+				F7964D031D60C5C500940DC8 /* PayLendDetail.m */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
 		};
-		F706667C1D59A4D500DAB146 /* IntangibleAssets */ = {
+		F7964D041D60C5C500940DC8 /* IntangibleAssets */ = {
 			isa = PBXGroup;
 			children = (
-				F706667D1D59A4D500DAB146 /* CreditCardsAssets+CoreDataProperties.h */,
-				F706667E1D59A4D500DAB146 /* CreditCardsAssets+CoreDataProperties.m */,
-				F706667F1D59A4D500DAB146 /* CreditCardsAssets.h */,
-				F70666801D59A4D500DAB146 /* CreditCardsAssets.m */,
-				F70666811D59A4D500DAB146 /* GoldBarAssets+CoreDataProperties.h */,
-				F70666821D59A4D500DAB146 /* GoldBarAssets+CoreDataProperties.m */,
-				F70666831D59A4D500DAB146 /* GoldBarAssets.h */,
-				F70666841D59A4D500DAB146 /* GoldBarAssets.m */,
-				F70666851D59A4D500DAB146 /* HuaBeiAssets+CoreDataProperties.h */,
-				F70666861D59A4D500DAB146 /* HuaBeiAssets+CoreDataProperties.m */,
-				F70666871D59A4D500DAB146 /* HuaBeiAssets.h */,
-				F70666881D59A4D500DAB146 /* HuaBeiAssets.m */,
-				F70666891D59A4D500DAB146 /* IntangibleAssets+CoreDataProperties.h */,
-				F706668A1D59A4D500DAB146 /* IntangibleAssets+CoreDataProperties.m */,
-				F706668B1D59A4D500DAB146 /* IntangibleAssets.h */,
-				F706668C1D59A4D500DAB146 /* IntangibleAssets.m */,
-				F706668D1D59A4D500DAB146 /* IOUAssets+CoreDataProperties.h */,
-				F706668E1D59A4D500DAB146 /* IOUAssets+CoreDataProperties.m */,
-				F706668F1D59A4D500DAB146 /* IOUAssets.h */,
-				F70666901D59A4D500DAB146 /* IOUAssets.m */,
-				F70666911D59A4D500DAB146 /* JieBeiAsset+CoreDataProperties.h */,
-				F70666921D59A4D500DAB146 /* JieBeiAsset+CoreDataProperties.m */,
-				F70666931D59A4D500DAB146 /* JieBeiAsset.h */,
-				F70666941D59A4D500DAB146 /* JieBeiAsset.m */,
+				F7964D051D60C5C500940DC8 /* CreditCardsAssets+CoreDataProperties.h */,
+				F7964D061D60C5C500940DC8 /* CreditCardsAssets+CoreDataProperties.m */,
+				F7964D071D60C5C500940DC8 /* CreditCardsAssets.h */,
+				F7964D081D60C5C500940DC8 /* CreditCardsAssets.m */,
+				F7964D091D60C5C500940DC8 /* GoldBarAssets+CoreDataProperties.h */,
+				F7964D0A1D60C5C500940DC8 /* GoldBarAssets+CoreDataProperties.m */,
+				F7964D0B1D60C5C500940DC8 /* GoldBarAssets.h */,
+				F7964D0C1D60C5C500940DC8 /* GoldBarAssets.m */,
+				F7964D0D1D60C5C500940DC8 /* HuaBeiAssets+CoreDataProperties.h */,
+				F7964D0E1D60C5C500940DC8 /* HuaBeiAssets+CoreDataProperties.m */,
+				F7964D0F1D60C5C500940DC8 /* HuaBeiAssets.h */,
+				F7964D101D60C5C500940DC8 /* HuaBeiAssets.m */,
+				F7964D111D60C5C500940DC8 /* IntangibleAssets+CoreDataProperties.h */,
+				F7964D121D60C5C500940DC8 /* IntangibleAssets+CoreDataProperties.m */,
+				F7964D131D60C5C500940DC8 /* IntangibleAssets.h */,
+				F7964D141D60C5C500940DC8 /* IntangibleAssets.m */,
+				F7964D151D60C5C500940DC8 /* IOUAssets+CoreDataProperties.h */,
+				F7964D161D60C5C500940DC8 /* IOUAssets+CoreDataProperties.m */,
+				F7964D171D60C5C500940DC8 /* IOUAssets.h */,
+				F7964D181D60C5C500940DC8 /* IOUAssets.m */,
+				F7964D191D60C5C500940DC8 /* JieBeiAsset+CoreDataProperties.h */,
+				F7964D1A1D60C5C500940DC8 /* JieBeiAsset+CoreDataProperties.m */,
+				F7964D1B1D60C5C500940DC8 /* JieBeiAsset.h */,
+				F7964D1C1D60C5C500940DC8 /* JieBeiAsset.m */,
 			);
 			path = IntangibleAssets;
 			sourceTree = "<group>";
 		};
-		F70666951D59A4D500DAB146 /* TangibleAssets */ = {
+		F7964D1D1D60C5C500940DC8 /* TangibleAssets */ = {
 			isa = PBXGroup;
 			children = (
-				F70666961D59A4D500DAB146 /* CashAssets+CoreDataProperties.h */,
-				F70666971D59A4D500DAB146 /* CashAssets+CoreDataProperties.m */,
-				F70666981D59A4D500DAB146 /* CashAssets.h */,
-				F70666991D59A4D500DAB146 /* CashAssets.m */,
-				F706669A1D59A4D500DAB146 /* ChangeAssets+CoreDataProperties.h */,
-				F706669B1D59A4D500DAB146 /* ChangeAssets+CoreDataProperties.m */,
-				F706669C1D59A4D500DAB146 /* ChangeAssets.h */,
-				F706669D1D59A4D500DAB146 /* ChangeAssets.m */,
-				F706669E1D59A4D500DAB146 /* DebitCardAssets+CoreDataProperties.h */,
-				F706669F1D59A4D500DAB146 /* DebitCardAssets+CoreDataProperties.m */,
-				F70666A01D59A4D500DAB146 /* DebitCardAssets.h */,
-				F70666A11D59A4D500DAB146 /* DebitCardAssets.m */,
-				F70666A21D59A4D500DAB146 /* TangibleAssets+CoreDataProperties.h */,
-				F70666A31D59A4D500DAB146 /* TangibleAssets+CoreDataProperties.m */,
-				F70666A41D59A4D500DAB146 /* TangibleAssets.h */,
-				F70666A51D59A4D500DAB146 /* TangibleAssets.m */,
-				F70666A61D59A4D500DAB146 /* YueBaoAssets+CoreDataProperties.h */,
-				F70666A71D59A4D500DAB146 /* YueBaoAssets+CoreDataProperties.m */,
-				F70666A81D59A4D500DAB146 /* YueBaoAssets.h */,
-				F70666A91D59A4D500DAB146 /* YueBaoAssets.m */,
+				F7964D1E1D60C5C500940DC8 /* CashAssets+CoreDataProperties.h */,
+				F7964D1F1D60C5C500940DC8 /* CashAssets+CoreDataProperties.m */,
+				F7964D201D60C5C500940DC8 /* CashAssets.h */,
+				F7964D211D60C5C500940DC8 /* CashAssets.m */,
+				F7964D221D60C5C500940DC8 /* ChangeAssets+CoreDataProperties.h */,
+				F7964D231D60C5C500940DC8 /* ChangeAssets+CoreDataProperties.m */,
+				F7964D241D60C5C500940DC8 /* ChangeAssets.h */,
+				F7964D251D60C5C500940DC8 /* ChangeAssets.m */,
+				F7964D261D60C5C500940DC8 /* DebitCardAssets+CoreDataProperties.h */,
+				F7964D271D60C5C500940DC8 /* DebitCardAssets+CoreDataProperties.m */,
+				F7964D281D60C5C500940DC8 /* DebitCardAssets.h */,
+				F7964D291D60C5C500940DC8 /* DebitCardAssets.m */,
+				F7964D2A1D60C5C500940DC8 /* TangibleAssets+CoreDataProperties.h */,
+				F7964D2B1D60C5C500940DC8 /* TangibleAssets+CoreDataProperties.m */,
+				F7964D2C1D60C5C500940DC8 /* TangibleAssets.h */,
+				F7964D2D1D60C5C500940DC8 /* TangibleAssets.m */,
+				F7964D2E1D60C5C500940DC8 /* YueBaoAssets+CoreDataProperties.h */,
+				F7964D2F1D60C5C500940DC8 /* YueBaoAssets+CoreDataProperties.m */,
+				F7964D301D60C5C500940DC8 /* YueBaoAssets.h */,
+				F7964D311D60C5C500940DC8 /* YueBaoAssets.m */,
 			);
 			path = TangibleAssets;
 			sourceTree = "<group>";
@@ -291,6 +293,14 @@
 		F7FD8AE01D367B440013D1B0 /* DataCenter */ = {
 			isa = PBXGroup;
 			children = (
+				F7964C651D60C54700940DC8 /* AssetsHolder+CoreDataProperties.h */,
+				F7964C661D60C54700940DC8 /* AssetsHolder+CoreDataProperties.m */,
+				F7964C671D60C54700940DC8 /* AssetsHolder.h */,
+				F7964C681D60C54700940DC8 /* AssetsHolder.m */,
+				F7964CAD1D60C54700940DC8 /* Assets+CoreDataProperties.h */,
+				F7964CAE1D60C54700940DC8 /* Assets+CoreDataProperties.m */,
+				F7964CAF1D60C54700940DC8 /* Assets.h */,
+				F7964CB01D60C54700940DC8 /* Assets.m */,
 				F70666561D59A4D500DAB146 /* BSTally */,
 				F7FD8AE11D367B440013D1B0 /* DataCenter.h */,
 				F7FD8AE31D367B440013D1B0 /* DataCenter.m */,
@@ -354,47 +364,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F70666C01D59A4D500DAB146 /* HuaBeiAssets+CoreDataProperties.m in Sources */,
-				F70666BA1D59A4D500DAB146 /* PayLendDetail+CoreDataProperties.m in Sources */,
-				F70666BB1D59A4D500DAB146 /* PayLendDetail.m in Sources */,
-				F70666AA1D59A4D500DAB146 /* AssetsHolder+CoreDataProperties.m in Sources */,
-				F70666AE1D59A4D500DAB146 /* BorrowExpendDetail+CoreDataProperties.m in Sources */,
-				F70666C21D59A4D500DAB146 /* IntangibleAssets+CoreDataProperties.m in Sources */,
-				F70666BD1D59A4D500DAB146 /* CreditCardsAssets.m in Sources */,
-				F70666CB1D59A4D500DAB146 /* ChangeAssets.m in Sources */,
-				F70666C81D59A4D500DAB146 /* CashAssets+CoreDataProperties.m in Sources */,
-				F70666C71D59A4D500DAB146 /* JieBeiAsset.m in Sources */,
-				F70666B81D59A4D500DAB146 /* PayBorrowDetail+CoreDataProperties.m in Sources */,
-				F70666B11D59A4D500DAB146 /* Detail.m in Sources */,
+				F7964D551D60C5C500940DC8 /* TangibleAssets.m in Sources */,
+				F7964D4C1D60C5C500940DC8 /* JieBeiAsset+CoreDataProperties.m in Sources */,
+				F7964D391D60C5C500940DC8 /* ExpendDetail.m in Sources */,
+				F7964D431D60C5C500940DC8 /* CreditCardsAssets.m in Sources */,
+				F7964D3D1D60C5C500940DC8 /* LendDetail.m in Sources */,
+				F7964CB91D60C54700940DC8 /* AssetsHolder+CoreDataProperties.m in Sources */,
+				F7964D351D60C5C500940DC8 /* BorrowExpendDetail.m in Sources */,
+				F7964D411D60C5C500940DC8 /* PayLendDetail.m in Sources */,
+				F7964D561D60C5C500940DC8 /* YueBaoAssets+CoreDataProperties.m in Sources */,
+				F7964D571D60C5C500940DC8 /* YueBaoAssets.m in Sources */,
+				F7964D4B1D60C5C500940DC8 /* IOUAssets.m in Sources */,
+				F7964D421D60C5C500940DC8 /* CreditCardsAssets+CoreDataProperties.m in Sources */,
+				F7964D4F1D60C5C500940DC8 /* CashAssets.m in Sources */,
+				F7964D491D60C5C500940DC8 /* IntangibleAssets.m in Sources */,
+				F7964D3F1D60C5C500940DC8 /* PayBorrowDetail.m in Sources */,
+				F7964D381D60C5C500940DC8 /* ExpendDetail+CoreDataProperties.m in Sources */,
+				F7964D461D60C5C500940DC8 /* HuaBeiAssets+CoreDataProperties.m in Sources */,
+				F7964D3C1D60C5C500940DC8 /* LendDetail+CoreDataProperties.m in Sources */,
+				F7964D541D60C5C500940DC8 /* TangibleAssets+CoreDataProperties.m in Sources */,
+				F7964D371D60C5C500940DC8 /* Detail.m in Sources */,
+				F7964D361D60C5C500940DC8 /* Detail+CoreDataProperties.m in Sources */,
+				F7964D3E1D60C5C500940DC8 /* PayBorrowDetail+CoreDataProperties.m in Sources */,
+				F7964D471D60C5C500940DC8 /* HuaBeiAssets.m in Sources */,
+				F7964D501D60C5C500940DC8 /* ChangeAssets+CoreDataProperties.m in Sources */,
+				F7964D3B1D60C5C500940DC8 /* IncomeDetail.m in Sources */,
+				F7964D401D60C5C500940DC8 /* PayLendDetail+CoreDataProperties.m in Sources */,
+				F7964CDE1D60C54700940DC8 /* Assets.m in Sources */,
+				F7964CBA1D60C54700940DC8 /* AssetsHolder.m in Sources */,
+				F7964D531D60C5C500940DC8 /* DebitCardAssets.m in Sources */,
+				F7964D451D60C5C500940DC8 /* GoldBarAssets.m in Sources */,
+				F7964D4D1D60C5C500940DC8 /* JieBeiAsset.m in Sources */,
+				F7964D4E1D60C5C500940DC8 /* CashAssets+CoreDataProperties.m in Sources */,
+				F7964D321D60C5C500940DC8 /* BorrowDetail+CoreDataProperties.m in Sources */,
 				F7FD8AE41D367B440013D1B0 /* DataCenter.m in Sources */,
-				F70666D01D59A4D500DAB146 /* YueBaoAssets+CoreDataProperties.m in Sources */,
-				F70666CD1D59A4D500DAB146 /* DebitCardAssets.m in Sources */,
-				F70666BC1D59A4D500DAB146 /* CreditCardsAssets+CoreDataProperties.m in Sources */,
-				F70666B71D59A4D500DAB146 /* LendDetail.m in Sources */,
-				F70666CC1D59A4D500DAB146 /* DebitCardAssets+CoreDataProperties.m in Sources */,
-				F70666C61D59A4D500DAB146 /* JieBeiAsset+CoreDataProperties.m in Sources */,
-				F70666CE1D59A4D500DAB146 /* TangibleAssets+CoreDataProperties.m in Sources */,
-				F70666C41D59A4D500DAB146 /* IOUAssets+CoreDataProperties.m in Sources */,
-				F70666AB1D59A4D500DAB146 /* AssetsHolder.m in Sources */,
-				F70666B01D59A4D500DAB146 /* Detail+CoreDataProperties.m in Sources */,
-				F70666CA1D59A4D500DAB146 /* ChangeAssets+CoreDataProperties.m in Sources */,
-				F70666BF1D59A4D500DAB146 /* GoldBarAssets.m in Sources */,
-				F70666CF1D59A4D500DAB146 /* TangibleAssets.m in Sources */,
-				F70666B31D59A4D500DAB146 /* ExpendDetail.m in Sources */,
-				F70666B61D59A4D500DAB146 /* LendDetail+CoreDataProperties.m in Sources */,
-				F70666B91D59A4D500DAB146 /* PayBorrowDetail.m in Sources */,
-				F70666B21D59A4D500DAB146 /* ExpendDetail+CoreDataProperties.m in Sources */,
-				F70666C11D59A4D500DAB146 /* HuaBeiAssets.m in Sources */,
-				F70666C91D59A4D500DAB146 /* CashAssets.m in Sources */,
-				F70666B51D59A4D500DAB146 /* IncomeDetail.m in Sources */,
-				F70666AC1D59A4D500DAB146 /* BorrowDetail+CoreDataProperties.m in Sources */,
-				F70666AD1D59A4D500DAB146 /* BorrowDetail.m in Sources */,
-				F70666C51D59A4D500DAB146 /* IOUAssets.m in Sources */,
-				F70666AF1D59A4D500DAB146 /* BorrowExpendDetail.m in Sources */,
-				F70666BE1D59A4D500DAB146 /* GoldBarAssets+CoreDataProperties.m in Sources */,
-				F70666D11D59A4D500DAB146 /* YueBaoAssets.m in Sources */,
-				F70666C31D59A4D500DAB146 /* IntangibleAssets.m in Sources */,
-				F70666B41D59A4D500DAB146 /* IncomeDetail+CoreDataProperties.m in Sources */,
+				F7964CDD1D60C54700940DC8 /* Assets+CoreDataProperties.m in Sources */,
+				F7964D481D60C5C500940DC8 /* IntangibleAssets+CoreDataProperties.m in Sources */,
+				F7964D511D60C5C500940DC8 /* ChangeAssets.m in Sources */,
+				F7964D341D60C5C500940DC8 /* BorrowExpendDetail+CoreDataProperties.m in Sources */,
+				F7964D331D60C5C500940DC8 /* BorrowDetail.m in Sources */,
+				F7964D3A1D60C5C500940DC8 /* IncomeDetail+CoreDataProperties.m in Sources */,
+				F7964D521D60C5C500940DC8 /* DebitCardAssets+CoreDataProperties.m in Sources */,
+				F7964D4A1D60C5C500940DC8 /* IOUAssets+CoreDataProperties.m in Sources */,
+				F7964D441D60C5C500940DC8 /* GoldBarAssets+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

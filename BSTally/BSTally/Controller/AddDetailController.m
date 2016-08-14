@@ -50,39 +50,35 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self viewWillAddSubview];
     [self.amountField becomeFirstResponder];
+    
 }
 
 - (void)viewWillAddSubview {
-    
+    [super viewWillAddSubview];
     [self.view setBackgroundColor:kColor_White];
-    
     [self.view addSubview:self.amountField];
-    [self.amountField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.top.trailing.mas_equalTo(UIEdgeInsetsMake(30, 30, 0, 30));
-        make.height.equalTo(@30);
-    }];
-    
     [self.view addSubview:self.detailSegmentView];
-    [self.detailSegmentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.amountField.mas_bottom).offset(16);
-        make.leading.trailing.mas_equalTo(UIEdgeInsetsMake(0, 30, 0, 30));
-        make.height.equalTo(@30);
+    [self.view addSubview:self.completeButton];
+    
+    
+    [self.amountField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.top.trailing.mas_equalTo(UIEdgeInsetsMake(kNavBarHeight, kBarHeight, 0, kBarHeight));
+        make.height.equalTo(@kBarHeight);
     }];
     
-    [self.view addSubview:self.completeButton];
+    [self.detailSegmentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.amountField.mas_bottom).offset(kMargin * 2);
+        make.leading.trailing.mas_equalTo(UIEdgeInsetsMake(0, kBarHeight, 0, kBarHeight));
+        make.height.equalTo(@kBarHeight);
+    }];
+    
     [self.completeButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.detailSegmentView.mas_bottom).offset(16);
-        make.leading.trailing.mas_equalTo(UIEdgeInsetsMake(0, 30, 0, 30));
-        make.height.equalTo(@30);
+        make.leading.trailing.mas_equalTo(UIEdgeInsetsMake(0, kBarHeight, 0, kBarHeight));
+        make.height.equalTo(@kBarHeight);
     }];
-    
-//    [self.view addSubview:self.numberPad];
-//    [self.numberPad mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.leading.bottom.trailing.mas_equalTo(UIEdgeInsetsZero);
-//        make.height.equalTo(@(kView_Height(self.view) * 0.5));
-//    }];
+
 }
 
 #pragma mark -
@@ -91,14 +87,7 @@
 - (void)completeButtonPressed:(PureColorButton *)sender
 {
     [self.accountant addDetailType:self.detailType amount:@([self.amountField.text doubleValue]) date:nil remarks:@"create" tags:@[@1] toWhichAssets:self.assetsName];
-    [self.view endEditing:YES];
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    [self.view endEditing:YES];
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self backButtonPressed:self.backButton];
 }
 
 - (void)amountFieldTextChange:(UITextField *)sender
@@ -146,7 +135,7 @@
 {
     _assetsName = assetsName;
     
-    self.assetsType = [self.accountant queryAssetsName:assetsName];
+    self.assetsType = [self.accountant queryAssetsTypeWithAssetsName:assetsName];
     if (self.assetsType < AssetsTypeIOU) {
         self.detailTitles = @[@"支出", @"收入", @"借出", @"收还", @"赊账", @"补账",];
         self.detailTypesArray = @[@(DetailTypeExpend),
@@ -188,8 +177,9 @@
         //_amountField.keyboardType = UIKeyboardTypeDecimalPad;
         _amountField.backgroundColor = kColor_White;
         _amountField.placeholder = @"请输入金额";
+        __weak typeof(self) weakSelf = self;
         [self.numberPad setInputField:_amountField completeCallback:^(NSInteger number) {
-            
+            [weakSelf dismissViewControllerAnimated:YES completion:nil];
         }];
     }
     return _amountField;

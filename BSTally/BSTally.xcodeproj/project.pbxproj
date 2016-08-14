@@ -12,13 +12,16 @@
 		F705F2201D597DEB001D93CE /* libDataCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F705F21C1D597DEB001D93CE /* libDataCenter.a */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F705F2211D597DEB001D93CE /* libTemplateCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F705F21D1D597DEB001D93CE /* libTemplateCenter.a */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F705F2221D597DEB001D93CE /* libToolCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F705F21E1D597DEB001D93CE /* libToolCenter.a */; settings = {ATTRIBUTES = (Weak, ); }; };
-		F705F2281D59884F001D93CE /* TangibleAssets+CalculationBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = F705F2271D59884F001D93CE /* TangibleAssets+CalculationBalance.m */; };
-		F705F22B1D59892A001D93CE /* IntangibleAssets+CalculationBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = F705F22A1D59892A001D93CE /* IntangibleAssets+CalculationBalance.m */; };
 		F71830111D570ADD00C15E2E /* AddDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71830101D570ADD00C15E2E /* AddDetailController.m */; };
 		F71831081D5717C700C15E2E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71831071D5717C700C15E2E /* HomeViewController.m */; };
-		F718310F1D574AF800C15E2E /* AssetsAccountant.m in Sources */ = {isa = PBXBuildFile; fileRef = F718310E1D574AF800C15E2E /* AssetsAccountant.m */; };
 		F71C8B161D538A2000A1B09F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71C8B151D538A2000A1B09F /* Storyboard.storyboard */; };
-		F7A55ED41D576CD000A17BDA /* BSTally.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7A55ED21D576CD000A17BDA /* BSTally.xcdatamodeld */; };
+		F78D92D41D5F7AA6001F8E07 /* AddAssetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F78D92D31D5F7AA6001F8E07 /* AddAssetsController.m */; };
+		F78D92D71D6031CA001F8E07 /* AssetController.m in Sources */ = {isa = PBXBuildFile; fileRef = F78D92D61D6031CA001F8E07 /* AssetController.m */; };
+		F7964C591D60C38F00940DC8 /* BSTally.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = F7964C581D60C38F00940DC8 /* BSTally.xcdatamodel */; };
+		F7964C5C1D60C3B400940DC8 /* AssetsAccountant.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964C5B1D60C3B400940DC8 /* AssetsAccountant.m */; };
+		F7964C611D60C3E200940DC8 /* IntangibleAssets+CalculationBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964C5E1D60C3E200940DC8 /* IntangibleAssets+CalculationBalance.m */; };
+		F7964C621D60C3E200940DC8 /* TangibleAssets+CalculationBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964C601D60C3E200940DC8 /* TangibleAssets+CalculationBalance.m */; };
+		F7964D5A1D60C82B00940DC8 /* Assets+CalculationBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = F7964D591D60C82B00940DC8 /* Assets+CalculationBalance.m */; };
 		F7F0EF831D4B4CD20088BA56 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F0EF821D4B4CD20088BA56 /* TabBarController.m */; };
 		F7F0EF861D4B4D200088BA56 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F0EF851D4B4D200088BA56 /* NavigationController.m */; };
 		F7FD8AF81D367B740013D1B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FD8AF71D367B740013D1B0 /* main.m */; };
@@ -54,21 +57,27 @@
 		F705F21C1D597DEB001D93CE /* libDataCenter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDataCenter.a; path = "../../../../Library/Developer/Xcode/DerivedData/Tally-bgsojlzhopllvadwozlumoafudfi/Build/Products/Debug-iphoneos/libDataCenter.a"; sourceTree = "<group>"; };
 		F705F21D1D597DEB001D93CE /* libTemplateCenter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTemplateCenter.a; path = "../../../../Library/Developer/Xcode/DerivedData/Tally-bgsojlzhopllvadwozlumoafudfi/Build/Products/Debug-iphoneos/libTemplateCenter.a"; sourceTree = "<group>"; };
 		F705F21E1D597DEB001D93CE /* libToolCenter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libToolCenter.a; path = "../../../../Library/Developer/Xcode/DerivedData/Tally-bgsojlzhopllvadwozlumoafudfi/Build/Products/Debug-iphoneos/libToolCenter.a"; sourceTree = "<group>"; };
-		F705F2261D59884F001D93CE /* TangibleAssets+CalculationBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TangibleAssets+CalculationBalance.h"; sourceTree = "<group>"; };
-		F705F2271D59884F001D93CE /* TangibleAssets+CalculationBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TangibleAssets+CalculationBalance.m"; sourceTree = "<group>"; };
-		F705F2291D59892A001D93CE /* IntangibleAssets+CalculationBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IntangibleAssets+CalculationBalance.h"; sourceTree = "<group>"; };
-		F705F22A1D59892A001D93CE /* IntangibleAssets+CalculationBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IntangibleAssets+CalculationBalance.m"; sourceTree = "<group>"; };
 		F71830101D570ADD00C15E2E /* AddDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDetailController.m; sourceTree = "<group>"; };
 		F71831061D5717C700C15E2E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		F71831071D5717C700C15E2E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		F718310D1D574AF800C15E2E /* AssetsAccountant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsAccountant.h; sourceTree = "<group>"; };
-		F718310E1D574AF800C15E2E /* AssetsAccountant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetsAccountant.m; sourceTree = "<group>"; };
 		F71C8B0B1D5385E900A1B09F /* libTemplateCenter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTemplateCenter.a; path = "../../TemplateCenter/build/Debug-iphoneos/libTemplateCenter.a"; sourceTree = "<group>"; };
 		F71C8B121D53871D00A1B09F /* AddDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDetailController.h; sourceTree = "<group>"; };
 		F71C8B151D538A2000A1B09F /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = Controller/Storyboard.storyboard; sourceTree = "<group>"; };
 		F72FE6ED1D522CCA00C5A714 /* libToolCenter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libToolCenter.a; path = "../../ToolCenter/build/Debug-iphoneos/libToolCenter.a"; sourceTree = "<group>"; };
 		F74045661D58290E00F89F8B /* BSTally.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTally.pch; sourceTree = "<group>"; };
-		F7A55ED31D576CD000A17BDA /* BSTally.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BSTally.xcdatamodel; sourceTree = "<group>"; };
+		F78D92D21D5F7AA6001F8E07 /* AddAssetsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAssetsController.h; sourceTree = "<group>"; };
+		F78D92D31D5F7AA6001F8E07 /* AddAssetsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAssetsController.m; sourceTree = "<group>"; };
+		F78D92D51D6031CA001F8E07 /* AssetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetController.h; sourceTree = "<group>"; };
+		F78D92D61D6031CA001F8E07 /* AssetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetController.m; sourceTree = "<group>"; };
+		F7964C581D60C38F00940DC8 /* BSTally.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BSTally.xcdatamodel; sourceTree = "<group>"; };
+		F7964C5A1D60C3B400940DC8 /* AssetsAccountant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsAccountant.h; sourceTree = "<group>"; };
+		F7964C5B1D60C3B400940DC8 /* AssetsAccountant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetsAccountant.m; sourceTree = "<group>"; };
+		F7964C5D1D60C3E200940DC8 /* IntangibleAssets+CalculationBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IntangibleAssets+CalculationBalance.h"; sourceTree = "<group>"; };
+		F7964C5E1D60C3E200940DC8 /* IntangibleAssets+CalculationBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IntangibleAssets+CalculationBalance.m"; sourceTree = "<group>"; };
+		F7964C5F1D60C3E200940DC8 /* TangibleAssets+CalculationBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TangibleAssets+CalculationBalance.h"; sourceTree = "<group>"; };
+		F7964C601D60C3E200940DC8 /* TangibleAssets+CalculationBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TangibleAssets+CalculationBalance.m"; sourceTree = "<group>"; };
+		F7964D581D60C82B00940DC8 /* Assets+CalculationBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Assets+CalculationBalance.h"; sourceTree = "<group>"; };
+		F7964D591D60C82B00940DC8 /* Assets+CalculationBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Assets+CalculationBalance.m"; sourceTree = "<group>"; };
 		F7F0EF811D4B4CD20088BA56 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		F7F0EF821D4B4CD20088BA56 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		F7F0EF841D4B4D200088BA56 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
@@ -152,6 +161,22 @@
 			name = HostController;
 			sourceTree = "<group>";
 		};
+		F7964C571D60C37900940DC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7964D581D60C82B00940DC8 /* Assets+CalculationBalance.h */,
+				F7964D591D60C82B00940DC8 /* Assets+CalculationBalance.m */,
+				F7964C5D1D60C3E200940DC8 /* IntangibleAssets+CalculationBalance.h */,
+				F7964C5E1D60C3E200940DC8 /* IntangibleAssets+CalculationBalance.m */,
+				F7964C5F1D60C3E200940DC8 /* TangibleAssets+CalculationBalance.h */,
+				F7964C601D60C3E200940DC8 /* TangibleAssets+CalculationBalance.m */,
+				F7964C5A1D60C3B400940DC8 /* AssetsAccountant.h */,
+				F7964C5B1D60C3B400940DC8 /* AssetsAccountant.m */,
+				F7964C581D60C38F00940DC8 /* BSTally.xcdatamodel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F7A2BB581D56455700F057AC /* Library */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,8 +217,8 @@
 				F7FD8AF91D367B740013D1B0 /* AppDelegate.h */,
 				F7FD8AFA1D367B740013D1B0 /* AppDelegate.m */,
 				F7FD8B331D3680440013D1B0 /* Controller */,
-				F7FD8B341D3680440013D1B0 /* Model */,
 				F7FD8B371D3680440013D1B0 /* Others */,
+				F7964C571D60C37900940DC8 /* Model */,
 				F7FD8B381D3680440013D1B0 /* View */,
 				F7FD8AF61D367B740013D1B0 /* Supporting Files */,
 			);
@@ -237,24 +262,14 @@
 				F71831051D57164700C15E2E /* HostController */,
 				F71831061D5717C700C15E2E /* HomeViewController.h */,
 				F71831071D5717C700C15E2E /* HomeViewController.m */,
+				F78D92D51D6031CA001F8E07 /* AssetController.h */,
+				F78D92D61D6031CA001F8E07 /* AssetController.m */,
+				F78D92D21D5F7AA6001F8E07 /* AddAssetsController.h */,
+				F78D92D31D5F7AA6001F8E07 /* AddAssetsController.m */,
 				F71C8B121D53871D00A1B09F /* AddDetailController.h */,
 				F71830101D570ADD00C15E2E /* AddDetailController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		F7FD8B341D3680440013D1B0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F7A55ED21D576CD000A17BDA /* BSTally.xcdatamodeld */,
-				F718310D1D574AF800C15E2E /* AssetsAccountant.h */,
-				F718310E1D574AF800C15E2E /* AssetsAccountant.m */,
-				F705F2261D59884F001D93CE /* TangibleAssets+CalculationBalance.h */,
-				F705F2271D59884F001D93CE /* TangibleAssets+CalculationBalance.m */,
-				F705F2291D59892A001D93CE /* IntangibleAssets+CalculationBalance.h */,
-				F705F22A1D59892A001D93CE /* IntangibleAssets+CalculationBalance.m */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		F7FD8B371D3680440013D1B0 /* Others */ = {
@@ -454,16 +469,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F78D92D71D6031CA001F8E07 /* AssetController.m in Sources */,
 				F7FD8AFB1D367B740013D1B0 /* AppDelegate.m in Sources */,
-				F718310F1D574AF800C15E2E /* AssetsAccountant.m in Sources */,
+				F7964C5C1D60C3B400940DC8 /* AssetsAccountant.m in Sources */,
+				F7964C621D60C3E200940DC8 /* TangibleAssets+CalculationBalance.m in Sources */,
 				F71830111D570ADD00C15E2E /* AddDetailController.m in Sources */,
+				F7964C611D60C3E200940DC8 /* IntangibleAssets+CalculationBalance.m in Sources */,
 				F7FD8AF81D367B740013D1B0 /* main.m in Sources */,
+				F78D92D41D5F7AA6001F8E07 /* AddAssetsController.m in Sources */,
 				F7F0EF861D4B4D200088BA56 /* NavigationController.m in Sources */,
+				F7964C591D60C38F00940DC8 /* BSTally.xcdatamodel in Sources */,
+				F7964D5A1D60C82B00940DC8 /* Assets+CalculationBalance.m in Sources */,
 				F7F0EF831D4B4CD20088BA56 /* TabBarController.m in Sources */,
-				F705F22B1D59892A001D93CE /* IntangibleAssets+CalculationBalance.m in Sources */,
-				F705F2281D59884F001D93CE /* TangibleAssets+CalculationBalance.m in Sources */,
 				F71831081D5717C700C15E2E /* HomeViewController.m in Sources */,
-				F7A55ED41D576CD000A17BDA /* BSTally.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,20 +752,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		F7A55ED21D576CD000A17BDA /* BSTally.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F7A55ED31D576CD000A17BDA /* BSTally.xcdatamodel */,
-			);
-			currentVersion = F7A55ED31D576CD000A17BDA /* BSTally.xcdatamodel */;
-			name = BSTally.xcdatamodeld;
-			path = ../BSTally.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F7FD8AEB1D367B740013D1B0 /* Project object */;
 }
