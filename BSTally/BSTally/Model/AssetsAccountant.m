@@ -13,10 +13,10 @@
 #import "TangibleAssets.h"
 #import "IntangibleAssets.h"
 #import "AssetsHolder.h"
-#import "ToolCenter.h"
 #import "TangibleAssets+CalculationBalance.h"
 #import "IntangibleAssets+CalculationBalance.h"
 #import "Assets+CalculationBalance.h"
+#import "NSDate+ToString.h"
 
 @interface AssetsAccountant ()<NSFetchedResultsControllerDelegate>
 
@@ -107,10 +107,10 @@ static AssetsAccountant *accountant_;
     return type;
 }
 
-- (id)queryAssetsObjectWithAssetsName:(NSString *)assetsName
+- (Assets *)queryAssetsObjectWithAssetsName:(NSString *)assetsName
 {
-    __block id assetsObj;
-    [self.allAssets enumerateObjectsUsingBlock:^(id  _Nonnull obj, BOOL * _Nonnull stop) {
+    __block Assets *assetsObj;
+    [self.allAssets enumerateObjectsUsingBlock:^(Assets *obj, BOOL * _Nonnull stop) {
         if ([[obj name] isEqualToString:assetsName]) {
             assetsObj = obj;
         }
@@ -160,7 +160,7 @@ static AssetsAccountant *accountant_;
     
     [assets setValue:name forKey:@"name"];
     [assets setValue:self.holder forKey:@"whoHolder"];
-    [assets setValue:[ToolCenter currentDateStringWithDateFormat:@"yyyy-MM-dd"] forKey:@"createDate"];
+    [assets setValue:[NSDate currentDateStringWithDateFormat:@"yyyy-MM-dd"] forKey:@"createDate"];
     if (assetsType < AssetsTypeIOU) {
         [self.holder.assets addObject:assets];
         NSLog(@"创建Assets时：holder添加了一个%@，tangibleAssets", name);
@@ -273,7 +273,8 @@ static AssetsAccountant *accountant_;
             detail.amount = amount;
             detail.remarks = remarks;
             detail.tags = tags;
-            detail.date = date ? [date stringByAppendingString:@" 12:00:00"] : [ToolCenter currentDateStringWithDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+            detail.date = date ? [date stringByAppendingString:@" 12:00:00"] : [NSDate currentDateStringWithDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+            
             detail.whichAsset = obj;
             [[obj dailys] addObject:detail];
             [obj calculationBalanceWithSingleDetail:detail isAdd:YES];

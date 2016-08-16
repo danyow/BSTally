@@ -110,9 +110,7 @@
 - (UIButton *)backButton
 {
     if (!_backButton) {
-        
         if (self.parentViewController) {
-            
             if (self.navigationController.childViewControllers.count <= 1) {
                 return nil;
             } else {

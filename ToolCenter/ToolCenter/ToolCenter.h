@@ -10,6 +10,9 @@
 
 @interface ToolCenter : NSObject
 
-+ (NSString *)currentDateStringWithDateFormat:(NSString *)formatString;
+
++ (instancetype)shareTool;
+
+- (NSString *)currentDateStringWithDateFormat:(NSString *)formatString;
 
 @end

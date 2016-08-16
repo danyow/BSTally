@@ -13,7 +13,7 @@
 
 @interface AssetController : BasicViewController
 
-+ (instancetype)assetControllerWithAssetName:(NSString *)assetName;
++ (instancetype)assetControllerWithAssetName:(NSString *)assetName ;
 
 
 @end

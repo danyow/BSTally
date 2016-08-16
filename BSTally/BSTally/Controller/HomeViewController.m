@@ -122,7 +122,8 @@ static NSString * const kTableViewCellReuseIdentifier = @"askfjhkal";
 
 - (void)rightButtonPressed:(UIButton *)sender
 {
-    [self.navigationController pushViewController:[[AddAssetsController alloc] init] animated:YES];
+    AddAssetsController *addAssetsController = [[AddAssetsController alloc] init];
+    [self presentViewController:addAssetsController animated:YES completion:nil];
 }
 
 

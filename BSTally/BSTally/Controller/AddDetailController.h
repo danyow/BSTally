@@ -10,6 +10,6 @@
 
 @interface AddDetailController : BasicViewController
 
-+ (instancetype)addDetailControllerWithAssetsName:(NSString *)assetsName;
++ (instancetype)addDetailControllerWithAssetsName:(NSString *)assetsName completeCallback:(void(^)())completeCallback;
 
 @end

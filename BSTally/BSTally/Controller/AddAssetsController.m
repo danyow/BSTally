@@ -10,7 +10,10 @@
 
 @implementation AddAssetsController
 
-
-
+- (void)viewWillAddSubview
+{
+    [super viewWillAddSubview];
+    self.rightButton.hidden = YES;
+}
 
 @end

@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F72FE6DF1D522C9400C5A714 /* ToolCenter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F72FE6DE1D522C9400C5A714 /* ToolCenter.h */; };
-		F72FE6E11D522C9400C5A714 /* ToolCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F72FE6E01D522C9400C5A714 /* ToolCenter.m */; };
+		F77FE05C1D62162E00C7F35C /* ToolCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F77FE05B1D62162E00C7F35C /* ToolCenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +17,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				F72FE6DF1D522C9400C5A714 /* ToolCenter.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,9 +24,9 @@
 
 /* Begin PBXFileReference section */
 		F72FE6DB1D522C9400C5A714 /* libToolCenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libToolCenter.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F72FE6DE1D522C9400C5A714 /* ToolCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolCenter.h; sourceTree = "<group>"; };
-		F72FE6E01D522C9400C5A714 /* ToolCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolCenter.m; sourceTree = "<group>"; };
 		F72FE6EF1D522D3500C5A714 /* CommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		F77FE05A1D62162E00C7F35C /* ToolCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolCenter.h; sourceTree = "<group>"; };
+		F77FE05B1D62162E00C7F35C /* ToolCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolCenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +59,8 @@
 		F72FE6DD1D522C9400C5A714 /* ToolCenter */ = {
 			isa = PBXGroup;
 			children = (
-				F72FE6DE1D522C9400C5A714 /* ToolCenter.h */,
-				F72FE6E01D522C9400C5A714 /* ToolCenter.m */,
+				F77FE05A1D62162E00C7F35C /* ToolCenter.h */,
+				F77FE05B1D62162E00C7F35C /* ToolCenter.m */,
 				F72FE6EF1D522D3500C5A714 /* CommonDefine.h */,
 			);
 			path = ToolCenter;
@@ -124,7 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F72FE6E11D522C9400C5A714 /* ToolCenter.m in Sources */,
+				F77FE05C1D62162E00C7F35C /* ToolCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

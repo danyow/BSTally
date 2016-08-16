@@ -30,6 +30,8 @@
 @property (nonatomic, strong) NSArray    *detailTitles;
 @property (nonatomic, strong) NSArray    *detailTypesArray;
 
+@property (nonatomic, copy) void (^completeCallback)();
+
 @end
 
 @implementation AddDetailController
@@ -37,10 +39,11 @@
 #pragma mark -
 #pragma mark public method
 
-+ (instancetype)addDetailControllerWithAssetsName:(NSString *)assetsName
++ (instancetype)addDetailControllerWithAssetsName:(NSString *)assetsName completeCallback:(void(^)())completeCallback
 {
     AddDetailController *controller = [self new];
     controller.assetsName = assetsName;
+    controller.completeCallback = completeCallback;
     return controller;
 }
 
@@ -87,6 +90,9 @@
 - (void)completeButtonPressed:(PureColorButton *)sender
 {
     [self.accountant addDetailType:self.detailType amount:@([self.amountField.text doubleValue]) date:nil remarks:@"create" tags:@[@1] toWhichAssets:self.assetsName];
+    if (self.completeCallback) {
+        self.completeCallback();
+    }
     [self backButtonPressed:self.backButton];
 }
 
@@ -148,7 +154,7 @@
         self.detailTitles = @[@"刷得", @"预支", @"已还",];
         self.detailTypesArray = @[@(DetailTypeBorrow),
                                   @(DetailTypeBorrowExpend),
-                                  @(DetailTypePayBorrow),];
+                                  @(DetailTypePayBorrow)];
     }
     
     NSMutableArray *dictArray = [NSMutableArray arrayWithCapacity:self.detailTitles.count];

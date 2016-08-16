@@ -41,7 +41,7 @@ typedef enum {
 + (instancetype)shareAccountant;
 
 - (AssetsType)queryAssetsTypeWithAssetsName:(NSString *)assetsName;
-- (id)queryAssetsObjectWithAssetsName:(NSString *)assetsName;
+- (Assets *)queryAssetsObjectWithAssetsName:(NSString *)assetsName;
 
 - (Detail *)addDetailType:(DetailType)detailType amount:(NSNumber *)amount date:(NSString *)date remarks:(NSString *)remarks tags:(NSArray *)tags toWhichAssets:(NSString *)assetsName;
 - (void)moveDetail:(Detail*)detail toNewAssets:(NSString *)assetsName;
