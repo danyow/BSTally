@@ -29,6 +29,7 @@
 @property (nonatomic, assign) DetailType detailType;
 @property (nonatomic, strong) NSArray    *detailTitles;
 @property (nonatomic, strong) NSArray    *detailTypesArray;
+@property (nonatomic, copy) NSString *used;
 
 @property (nonatomic, copy) void (^completeCallback)();
 
@@ -89,12 +90,12 @@
 
 - (void)completeButtonPressed:(PureColorButton *)sender
 {
-    [self.accountant addDetailType:self.detailType amount:@([self.amountField.text doubleValue]) date:nil remarks:@"create" tags:@[@1] toWhichAssets:self.assetsName];
+    [self.accountant addDetailType:self.detailType amount:@([self.amountField.text doubleValue]) date:nil remarks:self.used tags:@[@1] toWhichAssets:self.assetsName];
     if (self.completeCallback) {
         self.completeCallback();
     }
     [self backButtonPressed:self.backButton];
-}
+} 
 
 - (void)amountFieldTextChange:(UITextField *)sender
 {
@@ -133,9 +134,8 @@
 - (void)segmentView:(UISegmentView *)view didSelectedIndex:(NSInteger)index segmentTitle:(NSString *)string
 {
     self.detailType = (DetailType)[self.detailTypesArray[index] integerValue];
+    self.used = string;
 }
-
-
 
 - (void)setAssetsName:(NSString *)assetsName
 {
@@ -156,6 +156,8 @@
                                   @(DetailTypeBorrowExpend),
                                   @(DetailTypePayBorrow)];
     }
+    
+    self.used = [self.detailTitles firstObject];
     
     NSMutableArray *dictArray = [NSMutableArray arrayWithCapacity:self.detailTitles.count];
     [self.detailTitles enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {

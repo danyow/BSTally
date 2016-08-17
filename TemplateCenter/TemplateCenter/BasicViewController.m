@@ -93,7 +93,7 @@
 {
     if (!_headerContainer) {
         _headerContainer = [[UIView alloc] init];
-        _headerContainer.backgroundColor = kColor_Random;
+        _headerContainer.backgroundColor = kColor_Theme;
     }
     return _headerContainer;
 }
@@ -102,7 +102,7 @@
 {
     if (!_bottomContainer) {
         _bottomContainer = [[UIView alloc] init];
-        _bottomContainer.backgroundColor = kColor_Random;
+        _bottomContainer.backgroundColor = kColor_Theme;
     }
     return _bottomContainer;
 }

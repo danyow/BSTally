@@ -9,7 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ColorCenter : NSObject
+
 + (UIColor *)colorWithHexInteger:(NSInteger)hexInteger;
 + (UIColor *)colorWithHexString:(NSString *)hexString;
 + (UIColor *)randomColor;
+
++ (instancetype)shareColorCenter;
+
+@property (nonatomic, strong) UIColor *themeColor;
+
 @end

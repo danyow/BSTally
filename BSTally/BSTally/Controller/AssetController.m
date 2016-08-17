@@ -114,9 +114,9 @@ static NSString * const kTableViewCellReuseIdentifier = @"asljhflja";
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:kTableViewCellReuseIdentifier];
     }
-    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"date" ascending:YES];
+    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"date" ascending:NO];
     NSArray *array = [self.asset.dailys sortedArrayUsingDescriptors:@[sort]];
-    cell.textLabel.text = [[array[indexPath.row] amount].description stringByAppendingString:[array[indexPath.row] remarks]];
+    cell.textLabel.text = [[array[indexPath.row] remarks] stringByAppendingString:[array[indexPath.row] amount].description];
     cell.detailTextLabel.text = [array[indexPath.row] date].description;
     return cell;
 }
@@ -129,6 +129,7 @@ static NSString * const kTableViewCellReuseIdentifier = @"asljhflja";
 {
     AddDetailController *addDetailController = [AddDetailController addDetailControllerWithAssetsName:self.asset.name completeCallback:^{
         [self.detailsTableView reloadData];
+        self.asset = [self.accountant queryAssetsObjectWithAssetsName:self.asset.name];
     }];
     [self presentViewController:addDetailController animated:YES completion:nil];
 }

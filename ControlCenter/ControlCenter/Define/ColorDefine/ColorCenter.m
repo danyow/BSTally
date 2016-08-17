@@ -12,6 +12,18 @@
 
 @implementation ColorCenter
 
+static ColorCenter *instance_;
+
++ (instancetype)shareColorCenter
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance_ = [self new];
+    });
+    return instance_;
+}
+
+
 + (UIColor *)colorWithHexInteger:(NSInteger)hexInteger
 {
     return [UIColor colorWithRed:((hexInteger & 0x00FF0000) >> 16) / kEightMax
@@ -55,5 +67,14 @@
 //            (int)((CGColorGetComponents(color.CGColor))[1]*255.0),
 //            (int)((CGColorGetComponents(color.CGColor))[2]*255.0)];
 //}
+
+
+- (UIColor *)themeColor
+{
+    if (!_themeColor) {
+        _themeColor = [ColorCenter colorWithHexString:@"0x1e85a5"];
+    }
+    return _themeColor;
+}
 
 @end
