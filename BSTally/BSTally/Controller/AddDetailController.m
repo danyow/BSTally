@@ -21,8 +21,6 @@
 @property (nonatomic, strong) Detail           *testDetail;
 @property (nonatomic, strong) UISegmentView    *detailSegmentView;
 @property (nonatomic, strong) PureColorButton  *completeButton;
-@property (nonatomic, strong) DetailNumberPad  *numberPad;
-
 
 @property (nonatomic, strong) NSString   *assetsName;
 @property (nonatomic, assign) AssetsType assetsType;
@@ -67,19 +65,19 @@
     
     
     [self.amountField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.top.trailing.mas_equalTo(UIEdgeInsetsMake(kNavBarHeight, kBarHeight, 0, kBarHeight));
+        make.leading.top.trailing.mas_equalTo(UIEdgeInsetsMake(kNavBarHeight, kMargin, 0, kMargin));
         make.height.equalTo(@kBarHeight);
     }];
     
     [self.detailSegmentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.amountField.mas_bottom).offset(kMargin * 2);
-        make.leading.trailing.mas_equalTo(UIEdgeInsetsMake(0, kBarHeight, 0, kBarHeight));
+        make.leading.trailing.mas_equalTo(UIEdgeInsetsMake(0, kMargin, 0, kMargin));
         make.height.equalTo(@kBarHeight);
     }];
     
     [self.completeButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.detailSegmentView.mas_bottom).offset(16);
-        make.leading.trailing.mas_equalTo(UIEdgeInsetsMake(0, kBarHeight, 0, kBarHeight));
+        make.leading.trailing.mas_equalTo(UIEdgeInsetsMake(0, kMargin, 0, kMargin));
         make.height.equalTo(@kBarHeight);
     }];
 
@@ -182,11 +180,10 @@
         _amountField = [[UITextField alloc] init];
         [_amountField addTarget:self action:@selector(amountFieldTextChange:) forControlEvents:UIControlEventEditingChanged];
         _amountField.borderStyle = UITextBorderStyleRoundedRect;
-        //_amountField.keyboardType = UIKeyboardTypeDecimalPad;
         _amountField.backgroundColor = kColor_White;
         _amountField.placeholder = @"请输入金额";
         __weak typeof(self) weakSelf = self;
-        [self.numberPad setInputField:_amountField completeCallback:^(NSInteger number) {
+        [DetailNumberPad numberPadWithInputField:_amountField completeCallback:^(NSInteger number) {
             [weakSelf dismissViewControllerAnimated:YES completion:nil];
         }];
     }
@@ -211,9 +208,8 @@
     if (!_completeButton) {
         _completeButton = [[PureColorButton alloc] init];
         [_completeButton setTitle:@"OK" forState:UIControlStateNormal];
-        UIColor *randomColor = kColor_Random;
-        [_completeButton setNormalColor:randomColor];
-        [_completeButton setDisableColor:kColor_Alpha(randomColor, 0.5)];
+        [_completeButton setNormalColor:kColor_Theme];
+        [_completeButton setDisableColor:kColor_Alpha(kColor_Theme, 0.5)];
         [_completeButton addTarget:self action:@selector(completeButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _completeButton;
@@ -224,20 +220,9 @@
     if (!_detailSegmentView) {
         _detailSegmentView = [[UISegmentView alloc] init];
         _detailSegmentView.delegate = self;
-        _detailSegmentView.tintColor = kColor_Random;
+        _detailSegmentView.tintColor = kColor_Theme;
     }
     return _detailSegmentView;
-}
-
-- (DetailNumberPad *)numberPad
-{
-    if (!_numberPad) {
-        _numberPad = [[DetailNumberPad alloc] initWithFrame:CGRectMake(0, 0, kView_Width(self.view), kView_Height(self.view) * 0.5)];
-        _numberPad.backgroundColor = kColor_White;
-        _numberPad.layer.borderColor = kColor_Black.CGColor;
-        _numberPad.layer.borderWidth = 0.5;
-    }
-    return _numberPad;
 }
 
 @end

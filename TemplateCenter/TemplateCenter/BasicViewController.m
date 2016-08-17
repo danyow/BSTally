@@ -16,20 +16,28 @@
 
 @implementation BasicViewController
 
-#pragma mark -
-#pragma mark life cycle
-- (void)viewDidLoad
+- (void)hideTabBar
 {
-    [super viewDidLoad];
-    self.hidesBottomBarWhenPushed = YES;
-    self.view.backgroundColor = kColor_White;
-    [self viewWillAddSubview];
+    self.tabBarController.tabBar.hidden = YES;
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;
 }
+
+#pragma mark -
+#pragma mark life cycle
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self hideTabBar];
+    self.hidesBottomBarWhenPushed = YES;
+    self.view.backgroundColor = kColor_White;
+    [self viewWillAddSubview];
+}
+
+
 
 - (void)viewWillAddSubview
 {
@@ -39,11 +47,11 @@
         make.height.equalTo(@(kNavBarHeight));
     }];
     
-    [self.view addSubview:self.bottomContainer];
-    [self.bottomContainer mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.bottom.trailing.equalTo(@0);
-        make.height.equalTo(@(kBarHeight));
-    }];
+//    [self.view addSubview:self.bottomContainer];
+//    [self.bottomContainer mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.leading.bottom.trailing.equalTo(@0);
+//        make.height.equalTo(@(kBarHeight));
+//    }];
     
     if (self.backButton) {
         [self.headerContainer addSubview:self.backButton];

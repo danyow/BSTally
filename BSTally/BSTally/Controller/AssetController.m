@@ -59,24 +59,28 @@ static NSString * const kTableViewCellReuseIdentifier = @"asljhflja";
         make.top.equalTo(self.balanceLabel.mas_bottom).offset(kMargin);
         make.leading.trailing.mas_equalTo(UIEdgeInsetsMake(0, kMargin * 2, 0, kMargin * 2));
     }];
+    
+    UILabel *lastLabel = nil;
     if ([self.asset isKindOfClass:[IntangibleAssets class]]) {
         [self.view addSubview:self.quotaLabel];
         [self.quotaLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.borrowBalanceLabel.mas_bottom).offset(kMargin);
             make.leading.trailing.mas_equalTo(UIEdgeInsetsMake(0, kMargin * 2, 0, kMargin * 2));
         }];
+        lastLabel = self.quotaLabel;
     } else {
         [self.view addSubview:self.lendBalanceLabel];
         [self.lendBalanceLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.borrowBalanceLabel.mas_bottom).offset(kMargin);
             make.leading.trailing.mas_equalTo(UIEdgeInsetsMake(0, kMargin * 2, 0, kMargin * 2));
         }];
+        lastLabel = self.lendBalanceLabel;
     }
     
     [self.view addSubview:self.detailsTableView];
     [self.detailsTableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.borrowBalanceLabel.mas_bottom).offset(kMargin + 50);
-        make.leading.bottom.trailing.mas_equalTo(UIEdgeInsetsMake(0, kMargin * 2, kMargin * 2, kMargin * 2));
+        make.top.equalTo(lastLabel.mas_bottom).offset(kMargin);
+        make.leading.bottom.trailing.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
     
 }
@@ -97,8 +101,9 @@ static NSString * const kTableViewCellReuseIdentifier = @"asljhflja";
 
 - (void)setupDetailsTableView
 {
+    self.automaticallyAdjustsScrollViewInsets = YES;
     self.detailsTableView.dataSource = self;
-//    [self.detailsTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kTableViewCellReuseIdentifier];
+    self.detailsTableView.backgroundColor = kColor_White;
 }
 
 #pragma mark -

@@ -33,6 +33,18 @@
 
 #pragma mark -
 #pragma mark public method
+
++ (instancetype)numberPadWithInputField:(UITextField *)textField completeCallback:(void(^)(NSInteger number))completeCallback
+{
+    DetailNumberPad *numberPad = [[self alloc] initWithFrame:CGRectMake(0, 0, kWindow_Width, kWindow_Height * 0.5)];
+    numberPad.backgroundColor = kColor_White;
+    numberPad.layer.borderColor = kColor_Black.CGColor;
+    numberPad.layer.borderWidth = 0.5;
+    numberPad.completeCallback = completeCallback;
+    numberPad.needInputField = textField;
+    return numberPad;
+}
+
 - (void)setInputField:(UITextField *)textField completeCallback:(void(^)(NSInteger number))completeCallback
 {
     self.needInputField = textField;

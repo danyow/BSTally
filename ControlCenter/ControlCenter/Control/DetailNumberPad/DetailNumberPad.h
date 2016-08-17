@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) UITextField *needInputField;
 
++ (instancetype)numberPadWithInputField:(UITextField *)textField completeCallback:(void(^)(NSInteger number))completeCallback;
 - (void)setInputField:(UITextField *)textField completeCallback:(void(^)(NSInteger number))completeCallback;
 
 @end

@@ -9,6 +9,9 @@
 #ifndef ViewDefine_h
 #define ViewDefine_h
 
+#define kWindow_Width                [UIScreen mainScreen].bounds.size.width
+#define kWindow_Height               [UIScreen mainScreen].bounds.size.height
+
 #define kView_Height(view)           CGRectGetHeight((view).frame)
 #define kView_Width(view)            CGRectGetWidth((view).frame)
 #define kView_MaxX(view)             CGRectGetMaxX((view).frame)

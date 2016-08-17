@@ -354,4 +354,16 @@ static AssetsAccountant *accountant_;
     return allAssets;
 }
 
+- (NSArray *)allAssetName
+{
+    NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:self.allAssets.count];
+    [self.allAssets enumerateObjectsUsingBlock:^(Assets *asset, BOOL *stop) {
+        [array addObject:asset.name];
+    }];
+//    [array sortUsingComparator:^NSComparisonResult(Assets *obj1, Assets *obj2) {
+//        return [obj1.createDate compare:obj2.createDate];
+//    }];
+    return array;
+}
+
 @end

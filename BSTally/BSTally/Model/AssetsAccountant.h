@@ -40,6 +40,8 @@ typedef enum {
 
 + (instancetype)shareAccountant;
 
+@property (nonatomic, strong, readonly) NSArray *allAssetName;
+
 - (AssetsType)queryAssetsTypeWithAssetsName:(NSString *)assetsName;
 - (Assets *)queryAssetsObjectWithAssetsName:(NSString *)assetsName;
 

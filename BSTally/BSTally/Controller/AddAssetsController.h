@@ -8,6 +8,10 @@
 
 #import "BasicViewController.h"
 
+@class Assets;
+
 @interface AddAssetsController : BasicViewController
+
++ (instancetype)addAssetsControllerWithCompleteCallback:(void(^)())completeCallback;
 
 @end

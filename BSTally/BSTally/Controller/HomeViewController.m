@@ -10,19 +10,14 @@
 #import "AddDetailController.h"
 #import "AssetsAccountant.h"
 #import "PureColorButton.h"
-#import "ControlDefine.h"
-#import "Masonry.h"
 #import "AddAssetsController.h"
 #import "AssetController.h"
 
-
 static NSString * const kTableViewCellReuseIdentifier = @"askfjhkal";
-
 
 @interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UIView *bottomBarContainer;
-@property (nonatomic, strong) PureColorButton *addDetailButton;
 @property (nonatomic, strong) AssetsAccountant *accountant;
 
 @property (nonatomic, strong) NSArray     *assetsNameArray;
@@ -32,20 +27,8 @@ static NSString * const kTableViewCellReuseIdentifier = @"askfjhkal";
 
 @implementation HomeViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    [self hideTabBar];
-    [self loadAssets];
-}
-
 #pragma mark -
 #pragma mark private method
-
-- (void)hideTabBar
-{
-    self.tabBarController.tabBar.hidden = YES;
-}
 
 - (void)viewWillAddSubview
 {
@@ -56,9 +39,6 @@ static NSString * const kTableViewCellReuseIdentifier = @"askfjhkal";
         make.edges.mas_equalTo(UIEdgeInsetsMake(kNavBarHeight, 0, 0, 0));
     }];
 }
-
-
-
 
 - (void)loadAssets
 {
@@ -122,10 +102,20 @@ static NSString * const kTableViewCellReuseIdentifier = @"askfjhkal";
 
 - (void)rightButtonPressed:(UIButton *)sender
 {
-    AddAssetsController *addAssetsController = [[AddAssetsController alloc] init];
+    AddAssetsController *addAssetsController = [AddAssetsController addAssetsControllerWithCompleteCallback:^() {
+        [self.tableView reloadData];
+    }];
     [self presentViewController:addAssetsController animated:YES completion:nil];
 }
 
+
+#pragma mark -
+#pragma mark getter
+
+- (NSArray *)assetsNameArray
+{
+    return self.accountant.allAssetName;
+}
 
 #pragma mark -
 #pragma mark lazy load
@@ -136,20 +126,6 @@ static NSString * const kTableViewCellReuseIdentifier = @"askfjhkal";
         _bottomBarContainer = [[UIView alloc] init];
     }
     return _bottomBarContainer;
-}
-
-- (PureColorButton *)addDetailButton
-{
-    if (!_addDetailButton) {
-        _addDetailButton = [[PureColorButton alloc] init];
-        UIColor *randomColor = kColor_Random;
-        _addDetailButton.normalColor    = kColor_Alpha(randomColor, 0.5);
-        _addDetailButton.selectedColor  = randomColor;
-        _addDetailButton.highlightColor = randomColor;
-        [_addDetailButton setTitle:@"记账" forState:UIControlStateNormal];
-//        [_addDetailButton addTarget:self action:@selector(addDetailButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    }
-    return _addDetailButton;
 }
 
 - (UITableView *)tableView
