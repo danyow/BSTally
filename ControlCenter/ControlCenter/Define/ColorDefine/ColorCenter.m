@@ -72,7 +72,7 @@ static ColorCenter *instance_;
 - (UIColor *)themeColor
 {
     if (!_themeColor) {
-        _themeColor = [ColorCenter colorWithHexString:@"0x1e85a5"];
+        _themeColor = [ColorCenter colorWithHexString:@"0xe6e6e6"];
     }
     return _themeColor;
 }

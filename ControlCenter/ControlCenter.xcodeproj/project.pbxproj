@@ -13,6 +13,8 @@
 		F706664F1D59A3B800DAB146 /* TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F706664C1D59A3B800DAB146 /* TabBar.m */; };
 		F72FE6F11D522D8D00C5A714 /* libToolCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F72FE6F01D522D8D00C5A714 /* libToolCenter.a */; };
 		F78D92DB1D603305001F8E07 /* UIBriefLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F78D92DA1D603305001F8E07 /* UIBriefLabel.m */; };
+		F7B33CC21D6DF2EC008986F6 /* MeshCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B33CBF1D6DF2EC008986F6 /* MeshCollectionViewCell.m */; };
+		F7B33CC31D6DF2EC008986F6 /* MeshCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B33CC11D6DF2EC008986F6 /* MeshCollectionViewFlowLayout.m */; };
 		F7E124B01D58BC330042EDD5 /* UISegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E124AF1D58BC330042EDD5 /* UISegmentView.m */; };
 		F7FD8ACD1D367B330013D1B0 /* ControlCenter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7FD8ACC1D367B330013D1B0 /* ControlCenter.h */; };
 		F7FD8ACF1D367B330013D1B0 /* ControlCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FD8ACE1D367B330013D1B0 /* ControlCenter.m */; };
@@ -47,6 +49,10 @@
 		F78D92D91D603305001F8E07 /* UIBriefLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBriefLabel.h; sourceTree = "<group>"; };
 		F78D92DA1D603305001F8E07 /* UIBriefLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBriefLabel.m; sourceTree = "<group>"; };
 		F78D92DC1D603433001F8E07 /* FontDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontDefine.h; sourceTree = "<group>"; };
+		F7B33CBE1D6DF2EC008986F6 /* MeshCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeshCollectionViewCell.h; sourceTree = "<group>"; };
+		F7B33CBF1D6DF2EC008986F6 /* MeshCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeshCollectionViewCell.m; sourceTree = "<group>"; };
+		F7B33CC01D6DF2EC008986F6 /* MeshCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeshCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		F7B33CC11D6DF2EC008986F6 /* MeshCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeshCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		F7E124AE1D58BC330042EDD5 /* UISegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISegmentView.h; sourceTree = "<group>"; };
 		F7E124AF1D58BC330042EDD5 /* UISegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISegmentView.m; sourceTree = "<group>"; };
 		F7FD8AC91D367B330013D1B0 /* libControlCenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libControlCenter.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +110,7 @@
 		F71831091D571BBC00C15E2E /* Control */ = {
 			isa = PBXGroup;
 			children = (
+				F7B33CBD1D6DF2EC008986F6 /* MeshCollectionViewFlowLayout */,
 				F78D92D81D603305001F8E07 /* UIBriefLabel */,
 				F70666441D59A3B800DAB146 /* DetailNumberPad */,
 				F70666471D59A3B800DAB146 /* PureColorButton */,
@@ -156,6 +163,17 @@
 				F78D92DA1D603305001F8E07 /* UIBriefLabel.m */,
 			);
 			path = UIBriefLabel;
+			sourceTree = "<group>";
+		};
+		F7B33CBD1D6DF2EC008986F6 /* MeshCollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F7B33CBE1D6DF2EC008986F6 /* MeshCollectionViewCell.h */,
+				F7B33CBF1D6DF2EC008986F6 /* MeshCollectionViewCell.m */,
+				F7B33CC01D6DF2EC008986F6 /* MeshCollectionViewFlowLayout.h */,
+				F7B33CC11D6DF2EC008986F6 /* MeshCollectionViewFlowLayout.m */,
+			);
+			path = MeshCollectionViewFlowLayout;
 			sourceTree = "<group>";
 		};
 		F7E124AD1D58BC330042EDD5 /* UISegmentView */ = {
@@ -255,10 +273,12 @@
 				F705F2251D59862B001D93CE /* ColorCenter.m in Sources */,
 				F706664D1D59A3B800DAB146 /* DetailNumberPad.m in Sources */,
 				F78D92DB1D603305001F8E07 /* UIBriefLabel.m in Sources */,
+				F7B33CC31D6DF2EC008986F6 /* MeshCollectionViewFlowLayout.m in Sources */,
 				F706664E1D59A3B800DAB146 /* PureColorButton.m in Sources */,
 				F706664F1D59A3B800DAB146 /* TabBar.m in Sources */,
 				F7FD8ACF1D367B330013D1B0 /* ControlCenter.m in Sources */,
 				F7E124B01D58BC330042EDD5 /* UISegmentView.m in Sources */,
+				F7B33CC21D6DF2EC008986F6 /* MeshCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

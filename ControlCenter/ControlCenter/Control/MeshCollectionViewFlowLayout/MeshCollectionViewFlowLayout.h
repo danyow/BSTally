@@ -28,13 +28,6 @@
 @end
 
 
-
-
-
-
-
-
-
 IB_DESIGNABLE
 @interface MeshCollectionViewFlowLayout : UICollectionViewFlowLayout<UICollectionViewDataSource, UICollectionViewDelegate>
 

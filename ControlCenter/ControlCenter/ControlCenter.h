@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MeshCollectionViewCell.h"
 
 @interface ControlCenter : NSObject
 

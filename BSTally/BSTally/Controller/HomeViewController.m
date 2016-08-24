@@ -27,6 +27,12 @@ static NSString * const kTableViewCellReuseIdentifier = @"askfjhkal";
 
 @implementation HomeViewController
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.titleLabel.text = @"掰算";
+}
+
 #pragma mark -
 #pragma mark private method
 

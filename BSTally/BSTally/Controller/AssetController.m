@@ -11,10 +11,11 @@
 #import "AssetsAccountant.h"
 #import "Assets.h"
 #import "AddDetailController.h"
+#import "ControlCenter.h"
 
 static NSString * const kTableViewCellReuseIdentifier = @"asljhflja";
 
-@interface AssetController ()<UITableViewDataSource>
+@interface AssetController ()<MeshCollectionViewFlowLayoutDataSource>
 
 @property (nonatomic, strong) UIBriefLabel *balanceLabel;
 @property (nonatomic, strong) UIBriefLabel *borrowBalanceLabel;
@@ -22,7 +23,7 @@ static NSString * const kTableViewCellReuseIdentifier = @"asljhflja";
 @property (nonatomic, strong) UIBriefLabel *lendBalanceLabel;
 @property (nonatomic, strong) UIBriefLabel *quotaLabel;
 
-@property (nonatomic, strong) UITableView *detailsTableView;
+@property (nonatomic, strong) UICollectionView *detailsCollectionView;
 
 @property (nonatomic, strong) AssetsAccountant *accountant;
 @property (nonatomic, strong) Assets *asset;
@@ -31,10 +32,10 @@ static NSString * const kTableViewCellReuseIdentifier = @"asljhflja";
 
 @implementation AssetController
 
-
 + (instancetype)assetControllerWithAssetName:(NSString *)assetName
 {
     AssetController *assetController = [[AssetController alloc] init];
+    assetController.titleLabel.text  = assetName;
     assetController.asset = [assetController.accountant queryAssetsObjectWithAssetsName:assetName];
     return assetController;
 }
@@ -42,7 +43,7 @@ static NSString * const kTableViewCellReuseIdentifier = @"asljhflja";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setupDetailsTableView];
+    [self.detailsCollectionView registerClass:[MeshCollectionViewCell class] forCellWithReuseIdentifier:@"ID"];
 }
 
 - (void)viewWillAddSubview
@@ -77,8 +78,8 @@ static NSString * const kTableViewCellReuseIdentifier = @"asljhflja";
         lastLabel = self.lendBalanceLabel;
     }
     
-    [self.view addSubview:self.detailsTableView];
-    [self.detailsTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.view addSubview:self.detailsCollectionView];
+    [self.detailsCollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(lastLabel.mas_bottom).offset(kMargin);
         make.leading.bottom.trailing.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
@@ -98,31 +99,46 @@ static NSString * const kTableViewCellReuseIdentifier = @"asljhflja";
     briefLabel.briefColor = kColor_Black;
 }
 
-
-- (void)setupDetailsTableView
-{
-    self.automaticallyAdjustsScrollViewInsets = YES;
-    self.detailsTableView.dataSource = self;
-    self.detailsTableView.backgroundColor = kColor_White;
-}
-
 #pragma mark -
-#pragma mark UITableViewDataSource
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+#pragma mark MeshCollectionViewFlowLayoutDataSource
+
+- (NSArray<NSNumber *> *)columnWidthArrayOfMeshCollectionViewFlowLayout:(MeshCollectionViewFlowLayout *)meshCollectionViewFlowLayout
 {
-    return self.asset.dailys.count;
+    return @[@6, @4, @3, @3];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+
+- (NSArray<NSNumber *> *)rowHeightArrayOfMeshCollectionViewFlowLayout:(MeshCollectionViewFlowLayout *)meshCollectionViewFlowLayout
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kTableViewCellReuseIdentifier];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:kTableViewCellReuseIdentifier];
+    NSInteger count = self.asset.dailys.count;
+    NSMutableArray *rowHeightArray = [[NSMutableArray alloc] initWithCapacity:count];
+    for (int i = 0; i < count + 1; ++i) {
+        [rowHeightArray addObject:@35];
     }
-    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"date" ascending:NO];
-    NSArray *array = [self.asset.dailys sortedArrayUsingDescriptors:@[sort]];
-    cell.textLabel.text = [[array[indexPath.row] remarks] stringByAppendingString:[array[indexPath.row] amount].description];
-    cell.detailTextLabel.text = [array[indexPath.row] date].description;
+    return rowHeightArray;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtRow:(NSInteger)row column:(NSInteger)column indexPath:(NSIndexPath *)indexPath
+{
+    MeshCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ID" forIndexPath:indexPath];
+    
+    cell.layer.borderColor = kColor_Black.CGColor;
+    cell.layer.borderWidth = 0.5;
+    cell.label.textColor   = kColor_Black;
+    
+    NSArray *cellArray;
+    if (!row) {
+        cellArray = @[@"日期", @"金额", @"全部", @"备注"];
+    } else {
+        NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"date" ascending:NO];
+        NSArray *array = [self.asset.dailys sortedArrayUsingDescriptors:@[sort]];
+        Detail *detail = array[row - 1];
+        
+        
+        NSString *date = [detail.date substringToIndex:[detail.date rangeOfString:@" "].location];
+        cellArray = @[date, detail.amount.description, detail.remarks, @""];
+    }
+    cell.label.text = cellArray[column];
     return cell;
 }
 
@@ -133,7 +149,7 @@ static NSString * const kTableViewCellReuseIdentifier = @"asljhflja";
 - (void)rightButtonPressed:(UIButton *)sender
 {
     AddDetailController *addDetailController = [AddDetailController addDetailControllerWithAssetsName:self.asset.name completeCallback:^{
-        [self.detailsTableView reloadData];
+        [self.detailsCollectionView reloadData];
         self.asset = [self.accountant queryAssetsObjectWithAssetsName:self.asset.name];
     }];
     [self presentViewController:addDetailController animated:YES completion:nil];
@@ -163,7 +179,7 @@ static NSString * const kTableViewCellReuseIdentifier = @"asljhflja";
 {
     if (!_balanceLabel) {
         _balanceLabel = [[UIBriefLabel alloc] init];
-        [self preparatoryWorkBriefLabel:_balanceLabel briefString:@"余额"];
+        [self preparatoryWorkBriefLabel:_balanceLabel briefString:@"余额："];
     }
     return _balanceLabel;
 }
@@ -172,7 +188,7 @@ static NSString * const kTableViewCellReuseIdentifier = @"asljhflja";
 {
     if (!_borrowBalanceLabel) {
         _borrowBalanceLabel = [[UIBriefLabel alloc] init];
-        [self preparatoryWorkBriefLabel:_borrowBalanceLabel briefString:@"欠额"];
+        [self preparatoryWorkBriefLabel:_borrowBalanceLabel briefString:@"欠额："];
     }
     return _borrowBalanceLabel;
 }
@@ -181,7 +197,7 @@ static NSString * const kTableViewCellReuseIdentifier = @"asljhflja";
 {
     if (!_lendBalanceLabel) {
         _lendBalanceLabel = [[UIBriefLabel alloc] init];
-        [self preparatoryWorkBriefLabel:_lendBalanceLabel briefString:@"借额"];
+        [self preparatoryWorkBriefLabel:_lendBalanceLabel briefString:@"借额："];
     }
     return _lendBalanceLabel;
 }
@@ -190,17 +206,17 @@ static NSString * const kTableViewCellReuseIdentifier = @"asljhflja";
 {
     if (!_quotaLabel) {
         _quotaLabel = [[UIBriefLabel alloc] init];
-        [self preparatoryWorkBriefLabel:_quotaLabel briefString:@"额度"];
+        [self preparatoryWorkBriefLabel:_quotaLabel briefString:@"额度："];
     }
     return _quotaLabel;
 }
 
-- (UITableView *)detailsTableView
+- (UICollectionView *)detailsCollectionView
 {
-    if (!_detailsTableView) {
-        _detailsTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+    if (!_detailsCollectionView) {
+        _detailsCollectionView = [MeshCollectionViewFlowLayout meshCollectionViewWithDataSource:self FlexibleWidth:NO flexibleHeight:YES];
     }
-    return _detailsTableView;
+    return _detailsCollectionView;
 }
 
 - (AssetsAccountant *)accountant
